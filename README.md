@@ -1,5 +1,6 @@
 # coderdojo-gorinchem.github.io
-Op deze website kun je projecten vinden om aan te werken, thuis en tijdens coderdojo bijeenkomsten.
+Op deze website kun je projecten vinden om aan te werken, thuis en tijdens CoderDojo bijeenkomsten.
+Meer informatie over CoderDojo en een formulier om je op te geven voor een CoderDojo bijeenkomst vind je op de website van [Bibliotheek aan Zet](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo).
 
 ## Programmeren met Python
 Leer hoe je met behulp van de Python programmeertaal en de module PyGameZero een programma of spelletje maakt. Je hebt hier een laptop of computer met Windows of MacOS voor nodig. Daar installeer je een paar gratis programma's op. Lees er meer over op de [pagina over Python](python.md).
