@@ -29,11 +29,14 @@ Wil je een spel maken zonder programmeren? Je kunt hiervoor Bloxels gebruiken. M
 ## Electronica en 3D teken software
 Je kunt leren hoe "stroom" werkt, hoe electriciteit een lamp laat branden, hoe een schakelaar werkt.
 
-## Bouw je eigen apparaatje met een Arduino
+## Bouw je eigen apparaatje met een Arduino of Microbit
 Als jouw apparaatje een beweging waarneemt, zet het een lamp aan. Handig als je 's nachts uit bed wilt maar het is donker.
 
 ## Soldeer je eigen kunstwerk met LED lampjes
 Af en toe solderen we met LED lampjes een kunstwerk; deze activiteit is er niet elke keer. Hou de website goed in de gaten!
+
+## Robots programmeren
+Laat een robot (ozobot) opdrachten uitvoeren. 
 
 ## Vrijwilligers
 CoderDojo Gorinchem wordt gerund door vrijwilligers en wordt gesponsord door Bibliotheek aan Zet, Gorinchem.
