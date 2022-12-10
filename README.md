@@ -1,3 +1,5 @@
+![CoderDojo logo](coderdojo_logo.png)
+
 # CoderDojo Gorinchem
 Bij CoderDojo kun je verschillende activiteiten doen. Aan sommige projecten kun je ook thuis werken. 
 Op deze pagina lees je welke activiteiten we doen en zie je hoe je er thuis mee aan de slag kunt gaan.
