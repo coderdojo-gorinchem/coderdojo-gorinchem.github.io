@@ -41,4 +41,5 @@ CoderDojo Gorinchem wordt gerund door vrijwilligers en wordt gesponsord door Bib
 - Peter (mentor) *in het dagelijks leven: docent software development*
 
 ## Contact
-Wil je iets vragen? Stuur een e-mail naar [jjordens@debibliotheekaanzet.nl](mailto:jjordens@debibliotheekaanzet.nl) of bel tijdens openingstijden naar de Bibliotheek: 088-242 5074
+Wil je iets vragen? Stuur een e-mail naar [jjordens@debibliotheekaanzet.nl](mailto:jjordens@debibliotheekaanzet.nl) of bel tijdens openingstijden naar de Bibliotheek: 088-242 5074.
+Op de website van [Bibliotheek aan Zet](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo) zie je wanneer de volgende CoderDojo plaatsvindt en kun je je aanmelden.
