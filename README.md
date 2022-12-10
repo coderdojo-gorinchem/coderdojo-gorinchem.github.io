@@ -1,5 +1,7 @@
 ![CoderDojo logo](coderdojo_logo.png)
 
+Bij CoderDojo kunnen kinderen van 7 t/m 17 jaar leren programmeren. Dit wordt helemaal gratis verzorgd door vrijwilligers!
+
 # CoderDojo Gorinchem
 Bij CoderDojo kun je verschillende activiteiten doen. Aan sommige projecten kun je ook thuis werken. 
 Op deze pagina lees je welke activiteiten we doen en zie je hoe je er thuis mee aan de slag kunt gaan.
@@ -18,3 +20,14 @@ Je kunt leren hoe "stroom" werkt, hoe electriciteit een lamp laat branden, hoe e
 
 ## Bouw je eigen apparaatje met een Arduino
 Als jouw apparaatje een beweging waarneemt, zet het een lamp aan. Handig als je 's nachts uit bed wilt maar het is donker.
+
+## Mentoren
+CoderDojo Gorinchem wordt gerund door vrijwilligers en wordt gesponsord door Bibliotheek aan Zet, Gorinchem.
+
+- Joke (champion: de oprichter en organisator van een Dojo)
+- Chris (mentor)
+- Henk (mentor)
+- Ahmad (mentor)
+- Max (mentor)
+- Elise (mentor)
+- Peter (mentor)
