@@ -9,6 +9,8 @@ Leer hoe je met behulp van de Python programmeertaal en de module PyGameZero een
 ## Maak je eigen spel met Bloxels
 Wil je een spel maken zonder programmeren? Je kunt hiervoor Bloxels gebruiken. Met de gekleurde blokjes "teken" je je spelwereld, hoofdpersoon, en items, en via de tablets voeg je je kunstwerken toe aan de Bloxels app. In de bibliotheek hebben we een aantal tablets met een betaalde Bloxels licentie, waarop je kunt werken. Wil je er thuis ook mee werken, dan moet je je eigen licentie kopen (dat kost 3,99 euro voor één maand of 20 euro voor een jaar).
 
+![Foto van Bloxels](bloxels.jpeg)
+
 ## Electronica en 3D teken software
 Je kunt leren hoe "stroom" werkt, hoe electriciteit een lamp laat branden, hoe een schakelaar werkt.
 
