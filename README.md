@@ -13,9 +13,13 @@ Meer informatie over CoderDojo Gorinchem en een formulier om je op te geven staa
 - het is gratis, wel even aanmelden, zodat we weten dat je erbij bent: [Bibliotheek aan Zet](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo)
 - als je je eigen laptop meeneemt kun je bewaren wat je hebt gemaakt, er de volgende keer of thuis aan verder werken
 - als je een eigen Arduino starter kit meeneemt (en een doosje om je prototype veilig in te bewaren) kun je er thuis aan verder werken; we hebben ook een aantal Arduino kits te leen voor gebruik tijdens CoderDojo
- 
+
+## Maak je eigen website met HTML/CSS
+Leer hoe je met behulp van de opmaaktalen HTML en CSS een mooite website kunt maken. Ook geschikt om thuis aan te werken!
+
 ## Programmeren met Python
 Leer hoe je met behulp van de Python programmeertaal en de module PyGameZero een programma of spel maakt. Je hebt hier een laptop of computer met Windows of MacOS voor nodig. Daar installeer je een paar gratis programma's op. Lees er meer over op de [pagina over Python](python.md).
+Ook geschikt om thuis aan te werken!
 
 ## Maak je eigen spel met Bloxels
 Wil je een spel maken zonder programmeren? Je kunt hiervoor Bloxels gebruiken. Met de gekleurde blokjes "teken" je je spelwereld, hoofdpersoon, en items, en via de tablets voeg je je kunstwerken toe aan de Bloxels app. In de bibliotheek hebben we een aantal tablets met een betaalde Bloxels licentie, waarop je kunt werken. Wil je er thuis ook mee werken, dan moet je je eigen licentie kopen (dat kost 3,99 euro voor één maand of 20 euro voor een jaar).
