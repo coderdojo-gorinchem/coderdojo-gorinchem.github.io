@@ -50,7 +50,7 @@ CoderDojo Gorinchem wordt gerund door vrijwilligers en wordt gesponsord door Bib
 | Ahmad | mentor |
 | Max | mentor |
 | Elise | mentor |
-| Peter | mentor *in het dagelijks leven: docent software development* |
+| Peter | mentor, *in het dagelijks leven: docent software development* |
 
 ## Contact
 Wil je iets vragen? Stuur een e-mail naar [jjordens@debibliotheekaanzet.nl](mailto:jjordens@debibliotheekaanzet.nl) of bel tijdens openingstijden naar de Bibliotheek: 088-242 5074.
