@@ -4,8 +4,8 @@ Bij CoderDojo kunnen kinderen van 7 t/m 17 jaar leren programmeren. Dit wordt he
 
 # CoderDojo Gorinchem
 Bij CoderDojo kun je verschillende activiteiten doen. Aan sommige projecten kun je ook thuis werken. 
-Op deze pagina lees je welke activiteiten we doen en zie je hoe je er thuis mee aan de slag kunt gaan.
-Meer informatie over CoderDojo Gorinchem en een formulier om je op te geven staat op de website van [Bibliotheek aan Zet](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo). Op de website van [Coder(dojo) Nederland](https://coderdojo.nl) lees je meer over wat CoderDojo inhoudt, waarom het bestaat en hoe je er zelf één kunt beginnen.
+Hier lees je welke activiteiten we doen en zie je hoe je er thuis mee aan de slag kunt gaan.
+Meer informatie over CoderDojo Gorinchem en een formulier om je op te geven staat op de website van [Bibliotheek aan Zet](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo). Op de website van [Coder(dojo) Nederland](https://coderdojo.nl) lees je wat CoderDojo inhoudt, waarom het bestaat en hoe je vrijwilliger kunt worden.
 
 ## Wat heb je nodig?
 - een gezonde dosis nieuwsgierigheid!
