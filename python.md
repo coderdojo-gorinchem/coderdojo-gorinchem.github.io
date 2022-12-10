@@ -1,8 +1,9 @@
+![Logo](python_logo.png)
+
 # Programmeren met Python
 
 ## Wat ga je leren?
 Je leert de programmeertaal Python gebruiken om een programma of spel te schrijven.
-![Logo](python_logo.png)
 
 ## Wat heb je nodig?
 Om Python te kunnen gebruiken op een computer moet je een paar gratis programma's installeren:
