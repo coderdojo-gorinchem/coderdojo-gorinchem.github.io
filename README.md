@@ -1,2 +1,2 @@
 # coderdojo-gorinchem.github.io
-Repository for public coderdojo website 
+Op deze website kun je projecten vinden om thuis en op coderdojo te doen.
