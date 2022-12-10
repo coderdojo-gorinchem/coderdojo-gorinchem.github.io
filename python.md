@@ -14,3 +14,4 @@ Om Python te kunnen gebruiken op een computer moet je een paar gratis programma'
 ## Waar kun je meer informatie vinden?
 - op de website [coder(dojo).nl](https://coderdojo.nl/online-les/python/basis-programmeren) staat een video van een uur waarin de basis van Python wordt uitgelegd door de voorzitter van CoderDojo Nederland.
 - op de Engelstalige website [w3schools](https://www.w3schools.com/python/) staat een tutorial over Python, waarin de meestgebruikte commando's worden uitgelegd en waar je (via de groene knop "Try it yourself") de commando's kunt uitproberen en onderzoeken.
+- op de Engelstalige website [trinket.io](https://hourofpython.trinket.io/a-visual-introduction-to-python#/welcome/an-hour-of-code) kun je stap voor stap een cursus volgen, zonder dat je Python hoeft te installeren op je eigen laptop of computer.
