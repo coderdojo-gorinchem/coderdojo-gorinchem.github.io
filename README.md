@@ -7,13 +7,15 @@ Bij CoderDojo kun je verschillende activiteiten doen. Aan sommige projecten kun 
 Op deze pagina lees je welke activiteiten we doen en zie je hoe je er thuis mee aan de slag kunt gaan.
 Meer informatie over CoderDojo Gorinchem en een formulier om je op te geven staat op de website van [Bibliotheek aan Zet](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo). Op de website van [Coder(dojo) Nederland](https://coderdojo.nl) lees je meer over wat CoderDojo inhoudt, waarom het bestaat en hoe je er zelf één kunt beginnen.
 
-# Wat heb je nodig?
-- aanmelden, zodat we weten dat je erbij bent, doe je via [Bibliotheek aan Zet](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo)
+## Wat heb je nodig?
+- een gezonde dosis nieuwsgierigheid!
+- je bent tussen de 7 en 17 jaar
+- het is gratis, wel even aanmelden, zodat we weten dat je erbij bent: [Bibliotheek aan Zet](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo)
 - als je je eigen laptop meeneemt kun je bewaren wat je hebt gemaakt, er de volgende keer of thuis aan verder werken
-- als je een eigen Arduino starter kit meeneemt (en een doosje om je prototype veilig in te bewaren) kun je er thuis aan verder werken; we hebben ook een aantal Arduino kits voor gebruik tijdens CoderDojo.
+- als je een eigen Arduino starter kit meeneemt (en een doosje om je prototype veilig in te bewaren) kun je er thuis aan verder werken; we hebben ook een aantal Arduino kits te leen voor gebruik tijdens CoderDojo
  
 ## Programmeren met Python
-Leer hoe je met behulp van de Python programmeertaal en de module PyGameZero een programma of spelletje maakt. Je hebt hier een laptop of computer met Windows of MacOS voor nodig. Daar installeer je een paar gratis programma's op. Lees er meer over op de [pagina over Python](python.md).
+Leer hoe je met behulp van de Python programmeertaal en de module PyGameZero een programma of spel maakt. Je hebt hier een laptop of computer met Windows of MacOS voor nodig. Daar installeer je een paar gratis programma's op. Lees er meer over op de [pagina over Python](python.md).
 
 ## Maak je eigen spel met Bloxels
 Wil je een spel maken zonder programmeren? Je kunt hiervoor Bloxels gebruiken. Met de gekleurde blokjes "teken" je je spelwereld, hoofdpersoon, en items, en via de tablets voeg je je kunstwerken toe aan de Bloxels app. In de bibliotheek hebben we een aantal tablets met een betaalde Bloxels licentie, waarop je kunt werken. Wil je er thuis ook mee werken, dan moet je je eigen licentie kopen (dat kost 3,99 euro voor één maand of 20 euro voor een jaar).
