@@ -32,6 +32,9 @@ Je kunt leren hoe "stroom" werkt, hoe electriciteit een lamp laat branden, hoe e
 ## Bouw je eigen apparaatje met een Arduino
 Als jouw apparaatje een beweging waarneemt, zet het een lamp aan. Handig als je 's nachts uit bed wilt maar het is donker.
 
+## Soldeer je eigen kunstwerk met LED lampjes
+Af en toe solderen we met LED lampjes een kunstwerk; deze activiteit is er niet elke keer. Hou de website goed in de gaten!
+
 ## Vrijwilligers
 CoderDojo Gorinchem wordt gerund door vrijwilligers en wordt gesponsord door Bibliotheek aan Zet, Gorinchem.
 
