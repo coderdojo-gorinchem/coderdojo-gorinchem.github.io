@@ -21,13 +21,14 @@ Je kunt leren hoe "stroom" werkt, hoe electriciteit een lamp laat branden, hoe e
 ## Bouw je eigen apparaatje met een Arduino
 Als jouw apparaatje een beweging waarneemt, zet het een lamp aan. Handig als je 's nachts uit bed wilt maar het is donker.
 
-## Mentoren
+## Vrijwilligers
 CoderDojo Gorinchem wordt gerund door vrijwilligers en wordt gesponsord door Bibliotheek aan Zet, Gorinchem.
 
 - Joke (champion: de oprichter en organisator van een Dojo)
 - Chris (mentor)
 - Henk (mentor)
+- Joris (mentor)
 - Ahmad (mentor)
 - Max (mentor)
 - Elise (mentor)
-- Peter (mentor)
+- Peter (mentor) *in het dagelijks leven: docent software development*
