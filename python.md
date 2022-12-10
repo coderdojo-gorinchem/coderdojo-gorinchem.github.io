@@ -7,7 +7,7 @@ Je leert de programmeertaal Python gebruiken om een programma of spel te schrijv
 Om Python te kunnen gebruiken op een computer moet je een paar gratis programma's installeren:
 
 - versie 3 van de [Python programmeertaal](https://www.python.org/downloads/)
-  - het commando `python` moet vanaf een commandline kunnen worden uitgevoerd; soms doet het installatieprogramma dit voor je, en soms moet je dat zelf nog instellen. Probeer het even uit, door het programma `Command` (Windows) of `Terminal` (MacOS) te openen en te controleren of het commando `python --version` werkt (op sommige computers heet het commando `python3 --version`)
+  - het commando `python` moet vanaf een commandline kunnen worden uitgevoerd; soms doet het installatieprogramma dit voor je, en soms moet je dat zelf nog instellen. Probeer het even uit, door het programma `Command` (Windows) of `Terminal` (MacOS) te openen en te controleren of het commando `python --version` werkt (op sommige computers heet het commando `python3 --version`).  In [dit Engelstalige filmpje op youtube](https://www.youtube.com/watch?v=LI0bpqpERlM) doet iemand het voor.
 - een tekst editor om code te schrijven (bijvoorbeeld [Visual Studio Code](https://code.visualstudio.com) van Microsoft, of [Notepad++](https://notepad-plus-plus.org/downloads/))
   - handig: installeer ook de [Python plugin](https://marketplace.visualstudio.com/items?itemName=ms-python.python) in Visual Studio Code
 - de Python module [PyGameZero](https://pygame-zero.readthedocs.io/) om eenvoudig spelletjes te kunnen maken
