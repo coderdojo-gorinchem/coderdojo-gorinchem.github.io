@@ -1,7 +1,7 @@
 # Programmeren met Python
 
 ## Wat ga je leren?
-Je leert om de programmeertaal Python te gebruiken om een programma te schrijven.
+Je leert de programmeertaal Python gebruiken om een programma of spel te schrijven.
 
 ## Wat heb je nodig?
 Om Python te kunnen gebruiken op een computer moet je een paar gratis programma's installeren:
