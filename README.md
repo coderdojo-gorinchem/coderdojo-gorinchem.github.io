@@ -41,14 +41,16 @@ Laat een robot (ozobot) opdrachten uitvoeren.
 ## Vrijwilligers
 CoderDojo Gorinchem wordt gerund door vrijwilligers en wordt gesponsord door Bibliotheek aan Zet, Gorinchem.
 
-- Joke (champion: de oprichter en organisator van een Dojo)
-- Chris (mentor)
-- Henk (mentor)
-- Joris (mentor)
-- Ahmad (mentor)
-- Max (mentor)
-- Elise (mentor)
-- Peter (mentor) *in het dagelijks leven: docent software development*
+| Naam          | Rol           |
+| ------------- | ------------- |
+| Joke | champion: de oprichter en organisator van een Dojo |
+| Chris | mentor |
+| Henk | mentor |
+| Joris | mentor |
+| Ahmad | mentor |
+| Max | mentor |
+| Elise | mentor |
+| Peter | mentor *in het dagelijks leven: docent software development* |
 
 ## Contact
 Wil je iets vragen? Stuur een e-mail naar [jjordens@debibliotheekaanzet.nl](mailto:jjordens@debibliotheekaanzet.nl) of bel tijdens openingstijden naar de Bibliotheek: 088-242 5074.
