@@ -49,7 +49,7 @@ CoderDojo Gorinchem wordt gerund door vrijwilligers en wordt gesponsord door Bib
 | Joris | mentor |
 | Ahmad | mentor |
 | Max | mentor |
-| Elise | mentor |
+| Elise | mentor, *Studente HBO ICT, Ervaring met lesgeven en Coaching. Ook een passie voor het onderwijs en pyschologie* |
 | Peter | mentor, *in het dagelijks leven: docent software development* |
 
 ## Contact
