@@ -20,9 +20,15 @@ Meer informatie over CoderDojo Gorinchem en een formulier om je op te geven staa
 
 Leer hier hoe je een basis kennis voor progameren kan opbouwen. Dit gaan we doen met behulp van de website Codecademy. Ideaal om ook thuis te proberen. Lees er meer over op de [pagina over codecademy](codecademy.md)
 
-## Maak je eigen website met HTML/CSS
+## Programmeren met HTML, CSS en JavaScript
+
+### Maak je eigen website
 
 Leer hoe je met behulp van de opmaaktalen HTML en CSS een mooite website kunt maken. Ook geschikt om thuis aan te werken!
+
+### Vang Octo
+
+Leer hoe je met behulp van HTML, CSS en JavaScript een spel kunt maken voor in de browser. Een voorbeeld van het spel kun je [hier](https://coderdojo-gorinchem.github.io/vang-octo/) vinden en de bron code van het uiteindelijke spel [hier](https://github.com/coderdojo-gorinchem/vang-octo/).
 
 ## Programmeren met Python
 
