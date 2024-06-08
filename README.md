@@ -6,13 +6,13 @@ Bij CoderDojo kunnen kinderen van 7 t/m 17 jaar leren programmeren. Dit wordt he
 
 Bij CoderDojo kun je verschillende activiteiten doen. Aan sommige projecten kun je ook thuis werken.
 Hier lees je welke activiteiten we doen en zie je hoe je er thuis mee aan de slag kunt gaan.
-Meer informatie over CoderDojo Gorinchem en een formulier om je op te geven staat op de website van [Bibliotheek aan Zet](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo). Op de website van [Coder(dojo) Nederland](https://coderdojo.nl) lees je wat CoderDojo inhoudt, waarom het bestaat en hoe je vrijwilliger kunt worden.
+Meer informatie over CoderDojo Gorinchem en een formulier om je op te geven staat op de website van [Bibliotheek AanZet](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo). Op de website van [Coder(dojo) Nederland](https://coderdojo.nl) lees je wat CoderDojo inhoudt, waarom het bestaat en hoe je vrijwilliger kunt worden.
 
 ## Wat heb je nodig?
 
 - een gezonde dosis nieuwsgierigheid!
 - je bent tussen de 7 en 17 jaar
-- het is gratis, wel even aanmelden, zodat we weten dat je erbij bent: [Bibliotheek aan Zet](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo)
+- het is gratis, wel even aanmelden, zodat we weten dat je erbij bent: [Bibliotheek AanZet](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo)
 - als je je eigen laptop meeneemt kun je bewaren wat je hebt gemaakt, er de volgende keer of thuis aan verder werken
 - als je een eigen Arduino starter kit meeneemt (en een doosje om je prototype veilig in te bewaren) kun je er thuis aan verder werken; we hebben ook een aantal Arduino kits te leen voor gebruik tijdens CoderDojo
 
@@ -53,7 +53,7 @@ Laat een robot (ozobot) opdrachten uitvoeren.
 
 ## Vrijwilligers
 
-CoderDojo Gorinchem wordt gerund door vrijwilligers en wordt gesponsord door Bibliotheek aan Zet, Gorinchem.
+CoderDojo Gorinchem wordt gerund door vrijwilligers en wordt gesponsord door Bibliotheek AanZet, Gorinchem.
 
 | Naam    | Rol                                                                                                                               |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -68,5 +68,5 @@ CoderDojo Gorinchem wordt gerund door vrijwilligers en wordt gesponsord door Bib
 ## Contact
 
 Wil je iets vragen? Stuur een e-mail naar [jjordens@debibliotheekaanzet.nl](mailto:jjordens@debibliotheekaanzet.nl) of bel tijdens openingstijden naar de Bibliotheek: 088-242 5074.
-Op de website van [Bibliotheek aan Zet](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo) zie je wanneer de volgende CoderDojo plaatsvindt en kun je je aanmelden.
+Op de website van [Bibliotheek AanZet](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo) zie je wanneer de volgende CoderDojo plaatsvindt en kun je je aanmelden.
 Het adres van de bibliotheek is: Groenmarkt 1, 4201 EE Gorinchem.
