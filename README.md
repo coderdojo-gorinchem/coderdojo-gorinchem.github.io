@@ -55,16 +55,15 @@ Laat een robot (ozobot) opdrachten uitvoeren.
 
 CoderDojo Gorinchem wordt gerund door vrijwilligers en wordt gesponsord door Bibliotheek aan Zet, Gorinchem.
 
-| Naam  | Rol                                                                                                             |
-| ----- | --------------------------------------------------------------------------------------------------------------- |
-| Joke  | champion: de oprichter en organisator van een Dojo                                                              |
-| Chris | mentor                                                                                                          |
-| Henk  | mentor                                                                                                          |
-| Joris | mentor                                                                                                          |
-| Ahmad | mentor                                                                                                          |
-| Max   | mentor                                                                                                          |
-| Elise | mentor, _Studente HBO ICT, Ervaring met lesgeven en Coaching. Ook een passie voor het onderwijs en pyschologie_ |
-| Peter | mentor, _in het dagelijks leven: docent software development_                                                   |
+| Naam    | Rol                                                                                                                               |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Joke    | Champion: de oprichter en organisator van een Dojo                                                                                |
+| Ahmad   | Mentor                                                                                                                            |
+| Elise   | Mentor, _Studente HBO ICT, Ervaring met lesgeven en Coaching. Ook een passie voor het onderwijs en pyschologie._                  |
+| Henk    | Mentor                                                                                                                            |
+| Joris   | Mentor, _Technisch Team Lead werkend aan wetenschappelijke software. Geinteresseerd in proces automatisering en web-technologie._ |
+| Leandro | Mentor                                                                                                                            |
+| Marcel  | Mentor                                                                                                                            |
 
 ## Contact
 
