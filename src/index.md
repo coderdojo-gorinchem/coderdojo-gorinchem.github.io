@@ -16,20 +16,6 @@ Meer informatie over CoderDojo Gorinchem en een formulier om je op te geven staa
 - als je je eigen laptop meeneemt kun je bewaren wat je hebt gemaakt, er de volgende keer of thuis aan verder werken.
 - als je een eigen Arduino starter kit meeneemt (en een doosje om je prototype veilig in te bewaren) kun je er thuis aan verder werken; we hebben ook een aantal Arduino kits te leen voor gebruik tijdens CoderDojo.
 
-## Vrijwilligers
-
-CoderDojo Gorinchem wordt gerund door vrijwilligers en wordt gesponsord door Bibliotheek AanZet, Gorinchem.
-
-| Naam    | Rol                                                                                                                               |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| Joke    | Champion: de oprichter en organisator van een Dojo                                                                                |
-| Ahmad   | Mentor                                                                                                                            |
-| Elise   | Mentor, _Studente HBO ICT, Ervaring met lesgeven en Coaching. Ook een passie voor het onderwijs en pyschologie._                  |
-| Henk    | Mentor                                                                                                                            |
-| Joris   | Mentor, _Technisch Team Lead werkend aan wetenschappelijke software. Geinteresseerd in proces automatisering en web-technologie._ |
-| Leandro | Mentor                                                                                                                            |
-| Marcel  | Mentor                                                                                                                            |
-
 ## Contact
 
 Wil je iets vragen? Stuur een e-mail naar [jjordens@debibliotheekaanzet.nl](mailto:jjordens@debibliotheekaanzet.nl) of bel tijdens openingstijden naar de Bibliotheek: [088-242 5074](tel:+31882425074).
