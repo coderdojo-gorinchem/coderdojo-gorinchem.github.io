@@ -1,0 +1,24 @@
+---
+name: "Publish Website to GitHub Pages"
+
+on:
+  push:
+    branches:
+      - "main"
+  workflow_dispatch:
+
+jobs:
+  publish:
+    name: "Publish to github-pages branch"
+    permissions:
+      contents: "write"
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332" # v4.1.7
+
+      - uses: "retypeapp/action-build@a95ca1f9508dec8465a93f2e50a1228d22e90f4e" # v3.5.0
+
+      - uses: "retypeapp/action-github-pages@5a952a4f53fc7366288db464ec120f755e9f1303" # v3.5.0
+        with:
+          branch: "gh-pages"
+          update-branch: true
