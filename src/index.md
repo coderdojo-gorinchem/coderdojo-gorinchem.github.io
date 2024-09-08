@@ -6,19 +6,19 @@ Bij CoderDojo kunnen kinderen van 7 t/m 17 jaar leren programmeren. Dit wordt he
 
 Bij CoderDojo kun je verschillende activiteiten doen. Aan sommige projecten kun je ook thuis werken.
 Hier lees je welke activiteiten we doen en zie je hoe je er thuis mee aan de slag kunt gaan.
-Meer informatie over CoderDojo Gorinchem en een formulier om je op te geven staat op de website van [Bibliotheek AanZet](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo). Op de website van [Coder(dojo) Nederland](https://coderdojo.nl) lees je wat CoderDojo inhoudt, waarom het bestaat en hoe je vrijwilliger kunt worden.
+Meer informatie over CoderDojo Gorinchem en een formulier om je op te geven staat op de website van [Bibliotheek AanZet](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo). Op de website van [CoderDojo Nederland](https://coderdojo.nl) lees je wat CoderDojo inhoudt, waarom het bestaat en hoe je vrijwilliger kunt worden.
 
 ## Wat heb je nodig?
 
 - een gezonde dosis nieuwsgierigheid!
-- je bent tussen de 7 en 17 jaar
-- het is gratis, wel even aanmelden, zodat we weten dat je erbij bent: [Bibliotheek AanZet](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo)
-- als je je eigen laptop meeneemt kun je bewaren wat je hebt gemaakt, er de volgende keer of thuis aan verder werken
-- als je een eigen Arduino starter kit meeneemt (en een doosje om je prototype veilig in te bewaren) kun je er thuis aan verder werken; we hebben ook een aantal Arduino kits te leen voor gebruik tijdens CoderDojo
+- je bent tussen de 7 en 17 jaar.
+- het is gratis, wel even aanmelden, zodat we weten dat je erbij bent: [Bibliotheek AanZet](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo).
+- als je je eigen laptop meeneemt kun je bewaren wat je hebt gemaakt, er de volgende keer of thuis aan verder werken.
+- als je een eigen Arduino starter kit meeneemt (en een doosje om je prototype veilig in te bewaren) kun je er thuis aan verder werken; we hebben ook een aantal Arduino kits te leen voor gebruik tijdens CoderDojo.
 
 ## Leren programmeren met Codecademy
 
-Leer hier hoe je een basis kennis voor progameren kan opbouwen. Dit gaan we doen met behulp van de website Codecademy. Ideaal om ook thuis te proberen. Lees er meer over op de [pagina over codecademy](codecademy.md)
+Leer hier hoe je een basis kennis voor progameren kan opbouwen. Dit gaan we doen met behulp van de website Codecademy. Ideaal om ook thuis te proberen. Lees er meer over op de [pagina over codecademy](codecademy.md).
 
 ## Programmeren met HTML, CSS en JavaScript
 
@@ -51,7 +51,7 @@ Als jouw apparaatje een beweging waarneemt, zet het een lamp aan. Handig als je 
 
 ## Soldeer je eigen kunstwerk met LED lampjes
 
-Af en toe solderen we met LED lampjes een kunstwerk; deze activiteit is er niet elke keer. Hou de website goed in de gaten!
+Af en toe solderen we met LED lampjes een kunstwerk; deze activiteit is er niet elke keer. Houd de website goed in de gaten!
 
 ## Robots programmeren
 
