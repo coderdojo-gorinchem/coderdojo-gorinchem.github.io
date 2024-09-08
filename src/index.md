@@ -18,7 +18,7 @@ Meer informatie over CoderDojo Gorinchem en een formulier om je op te geven staa
 
 ## Leren programmeren met Codecademy
 
-Leer hier hoe je een basis kennis voor progameren kan opbouwen. Dit gaan we doen met behulp van de website Codecademy. Ideaal om ook thuis te proberen. Lees er meer over op de [pagina over codecademy](codecademy.md).
+Leer hier hoe je een basis kennis voor progameren kan opbouwen. Dit gaan we doen met behulp van de website Codecademy. Ideaal om ook thuis te proberen. Lees er meer over op de [pagina over codecademy](./codecademy).
 
 ## Programmeren met HTML, CSS en JavaScript
 
