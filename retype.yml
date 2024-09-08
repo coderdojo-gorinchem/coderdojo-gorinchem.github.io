@@ -5,6 +5,9 @@ output: ./public
 branding:
   logo: ./images/coderdojo-logo.png
 
+# TODO: Verwijder deze configuratie zodra de domein configuratie gerepareerd is
+cname: false
+
 favicon: ./src/images/coderdojo-brandmark.ico
 
 footer:
