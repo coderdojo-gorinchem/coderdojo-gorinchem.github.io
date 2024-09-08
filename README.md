@@ -73,6 +73,6 @@ CoderDojo Gorinchem wordt gerund door vrijwilligers en wordt gesponsord door Bib
 
 ## Contact
 
-Wil je iets vragen? Stuur een e-mail naar [jjordens@debibliotheekaanzet.nl](mailto:jjordens@debibliotheekaanzet.nl) of bel tijdens openingstijden naar de Bibliotheek: 088-242 5074.
+Wil je iets vragen? Stuur een e-mail naar [jjordens@debibliotheekaanzet.nl](mailto:jjordens@debibliotheekaanzet.nl) of bel tijdens openingstijden naar de Bibliotheek: [088-242 5074](tel:+31882425074).
 Op de website van [Bibliotheek AanZet](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo) zie je wanneer de volgende CoderDojo plaatsvindt en kun je je aanmelden.
 Het adres van de bibliotheek is: Groenmarkt 1, 4201 EE Gorinchem.
