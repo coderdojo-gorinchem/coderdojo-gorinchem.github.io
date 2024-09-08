@@ -1,4 +1,4 @@
-![CoderDojo logo](coderdojo_logo.png)
+![CoderDojo logo](./images/coderdojo-logo.png)
 
 Bij CoderDojo kunnen kinderen van 7 t/m 17 jaar leren programmeren. Dit wordt helemaal gratis verzorgd door vrijwilligers!
 
@@ -39,7 +39,7 @@ Ook geschikt om thuis aan te werken!
 
 Wil je een spel maken zonder programmeren? Je kunt hiervoor Bloxels gebruiken. Met de gekleurde blokjes "teken" je je spelwereld, hoofdpersoon, en items, en via de tablets voeg je je kunstwerken toe aan de Bloxels app. In de bibliotheek hebben we een aantal tablets met een betaalde Bloxels licentie, waarop je kunt werken. Wil je er thuis ook mee werken, dan moet je je eigen licentie kopen (dat kost 3,99 euro voor één maand of 20 euro voor een jaar).
 
-![Foto van Bloxels](bloxels.jpeg)
+![Foto van Bloxels](./images/bloxels.jpg)
 
 ## Electronica en 3D teken software
 
