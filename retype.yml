@@ -1,0 +1,27 @@
+---
+input: ./src
+output: ./public
+
+branding:
+  logo: ./images/coderdojo-logo.png
+
+favicon: ./src/images/coderdojo-brandmark.ico
+
+footer:
+  copyright: "&copy; Copyright {{ year }}. All rights reserved."
+
+links:
+  - icon: home
+    link: https://bibliotheekaanzet.nl/
+    text: Bibliotheek AanZet
+  - icon: rocket
+    link: https://coderdojo.nl/
+    text: CoderDojo Nederland
+
+locale: nl
+
+snippets:
+  lineNumbers:
+    - "*"
+
+url: https://coderdojo-gorinchem.nl
