@@ -8,8 +8,6 @@ branding:
 # TODO: Verwijder deze configuratie zodra de domein configuratie gerepareerd is
 cname: false
 
-favicon: ./src/images/coderdojo-brandmark.ico
-
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
 
