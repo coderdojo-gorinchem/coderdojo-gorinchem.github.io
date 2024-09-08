@@ -23,3 +23,7 @@ Elke manier van refereren heeft voor en nadelen. Relatieve paden zorgen ervoor d
 De website is opgeslagen in een Git repository en gehost op [GitHub](https://github.com). Git is een versiebeheersysteem. Wanneer er wijzigingen worden gedetecteerd in de Git repository wordt de website automatisch gepubliceerd.
 
 Voor eenvoudige veranderingen kunnen bestanden direct op GitHub aangepast worden. Navigeer in GitHub naar het bestand wat je wilt aanpassen of naar de locatie waar je een nieuw bestand wilt toevoegen en klik op de gewenste actie, bijvoorbeeld het potlood icoon of de _Add file_ knop. Wanneer je tevreden bent met je wijzigingen klik je op _Commit changes&hellip;_ en laat je een beschrijving achter.
+
+## Nieuwe lessen toevoegen
+
+Voeg nieuwe lessen als een map toe in de `/src/activiteiten` map. Kopieer de `les_template.md` als de `index.md` naar de nieuwe map. Vul de content daarna verder in.
