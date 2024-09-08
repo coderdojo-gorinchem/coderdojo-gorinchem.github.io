@@ -12,7 +12,7 @@ Meer informatie over CoderDojo Gorinchem en een formulier om je op te geven staa
 
 - een gezonde dosis nieuwsgierigheid!
 - je bent tussen de 7 en 17 jaar.
-- het is gratis, wel even aanmelden, zodat we weten dat je erbij bent: [Bibliotheek AanZet](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo).
+- het is gratis, [wel even aanmelden via de website](https://www.debibliotheekaanzet.nl/activiteiten/coderdojo), zodat we weten dat je erbij bent.
 - als je je eigen laptop meeneemt kun je bewaren wat je hebt gemaakt, er de volgende keer of thuis aan verder werken.
 - als je een eigen Arduino starter kit meeneemt (en een doosje om je prototype veilig in te bewaren) kun je er thuis aan verder werken; we hebben ook een aantal Arduino kits te leen voor gebruik tijdens CoderDojo.
 
