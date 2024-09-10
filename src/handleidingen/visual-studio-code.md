@@ -29,11 +29,11 @@ We een aantal bestanden voorbereid die het eenvoudig maken om VS Code zo te conf
 
   Er zou nu een `.vscode` map in de project map moeten staan.
 
-- Start VS Code en open de project map door op _File_ en dan _Open Folder..._ te klikken (of door _Control+k_, _Control+o_ in te toetsen).
+- Start VS Code en open de project map door op _File_ en dan _Open Folder..._ te klikken (of door <kbd>Ctrl/Cmd</kbd> + <kbd>k</kbd>, <kbd>Ctrl/Cmd</kbd> + <kbd>o</kbd> in te toetsen).
 
 - Installeer de aanbevolen extensies door naar het _extensies_ menu te navigeren (het actieve item in de volgende schermafbeelding).
 
-  Dit kan door er op te klikken of door op je toetsenbord de toetsen _Control_ (of _Cmd_ op een Mac), _Shift_ en _x_ tegelijkertijd in te drukken. Type in het zoekveld `@recommended` en zorg ervoor dat alle extensies geïnstalleerd zijn.
+  Dit kan door er op te klikken of door op je toetsenbord de toetsen <kbd>Ctrl/Cmd</kbd> + <kbd>X</kbd> tegelijkertijd in te drukken. Type in het zoekveld `@recommended` en zorg ervoor dat alle extensies geïnstalleerd zijn.
 
   In sommige gevallen kan het zijn dat je VS Code opnieuw moet opstarten.
 
@@ -47,7 +47,7 @@ De map is nu voorbereid. Indien je naar deze pagina doorverwezen bent vanuit een
 
 ## Nieuwe mappen en bestanden maken
 
-Het maken van nieuwe mappen of bestanden in een project map is zo gedaan vanuit VS Code. Dit gebeurt vanuit het _Explorer_ paneel. Dit is het eerste paneel dat toegankelijk is vanuit de primaire toolbar. Het kan geopened worden door er op te klikken, of door de toetsen _Control_, _Shift_ en _e_ tegelijkertijd in te drukken.
+Het maken van nieuwe mappen of bestanden in een project map is zo gedaan vanuit VS Code. Dit gebeurt vanuit het _Explorer_ paneel. Dit is het eerste paneel dat toegankelijk is vanuit de primaire toolbar. Het kan geopened worden door er op te klikken, of door de toetsen <kbd>Ctrl/Cmd</kbd> + <kbd>E</kbd> tegelijkertijd in te drukken.
 
 ![](/images/vscode-explorer.png)
 
@@ -55,4 +55,4 @@ Na het openen van het paneel verschijnt de huidige inhoud van de geopende map. W
 
 ![](/images/vscode-nieuw-bestand.png)
 
-Ook kun je met behulp van het toetsenbord een nieuw bestand of map aanmaken. Als het _Explorer_ paneel actief is kun je door op _a_ te drukken een nieuw bestand maken en door _Shift_ en _a_ tegelijkertijd in te drukken een nieuwe map.
+Ook kun je met behulp van het toetsenbord een nieuw bestand of map aanmaken. Als het _Explorer_ paneel actief is kun je door op <kbd>a</kbd> te drukken een nieuw bestand maken en door <kbd>A</kbd> in te drukken een nieuwe map.
