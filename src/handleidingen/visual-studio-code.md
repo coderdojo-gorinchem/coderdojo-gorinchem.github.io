@@ -29,7 +29,7 @@ We een aantal bestanden voorbereid die het eenvoudig maken om VS Code zo te conf
 
   Er zou nu een `.vscode` map in de project map moeten staan.
 
-- Start VS Code en open de project map door op _Bestand_ en dan _Open Map..._ te klikken.
+- Start VS Code en open de project map door op _File_ en dan _Open Folder..._ te klikken (of door _Control+k_, _Control+o_ in te toetsen).
 
 - Installeer de aanbevolen extensies door naar het _extensies_ menu te navigeren (het actieve item in de volgende schermafbeelding).
 
