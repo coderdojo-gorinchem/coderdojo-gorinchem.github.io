@@ -18,7 +18,7 @@ Voor een aantal projecten die bij de CoderDojo verzorgd worden maken we gebruik 
 - Nadat je het installatiebestand hebt gedownload kun je het programma installeren.
 - Zodra het programma geïnstalleerd is kun je het vinden in het menu van waaruit je programma's opstart door de zoeken naar _Code_.
 
-## Een map voor project voorbereiden
+## Een map voor een project voorbereiden
 
 We een aantal bestanden voorbereid die het eenvoudig maken om VS Code zo te configureren dat je er optimaal mee aan CoderDojo projecten te werken, bijvoorbeeld door een aantal handige uitbreidingen te installeren. Op die manier kun je zo snel mogelijk aan het werk.
 
@@ -43,4 +43,16 @@ We een aantal bestanden voorbereid die het eenvoudig maken om VS Code zo te conf
   Als je geluk hebt, vraagt VS Code bij het openen van de map automatisch of je de aanbevolen extensies wilt installeren. Klik in dat geval op _Ja_.
   !!!
 
-De map is nu voorbereid. Indien je naar deze pagina doorverwezen bent vanuit een project, kun je nu teruggaan naar het project.
+De map is nu voorbereid. Indien je naar deze pagina doorverwezen bent vanuit een project, kun je nu teruggaan naar het project. Mocht je meer willen weten over hoe je bepaalde dingen kunt doen in VS Code, lees dan verder. Je kunt ook het menu aan de rechterkant gebruiken om direct naar een relevant onderwerp te navigeren.
+
+## Nieuwe mappen en bestanden maken
+
+Het maken van nieuwe mappen of bestanden in een project map is zo gedaan vanuit VS Code. Dit gebeurt vanuit het _Explorer_ paneel. Dit is het eerste paneel dat toegankelijk is vanuit de primaire toolbar. Het kan geopened worden door er op te klikken, of door de toetsen _Control_, _Shift_ en _e_ tegelijkertijd in te drukken.
+
+![](/images/vscode-explorer.png)
+
+Na het openen van het paneel verschijnt de huidige inhoud van de geopende map. Wanneer je met je muis over de inhoud van de map heen beweegt verschijnen er 4 knoppen. De twee linker knoppen maken respectievelijk een nieuw bestand en een nieuwe map in de project map. Wanneer je een bestand of map in een andere map wilt aanmaken, dan dien je die eerst te selecteren.
+
+![](/images/vscode-nieuw-bestand.png)
+
+Ook kun je met behulp van het toetsenbord een nieuw bestand of map aanmaken. Als het _Explorer_ paneel actief is kun je door op _a_ te drukken een nieuw bestand maken en door _Shift_ en _a_ tegelijkertijd in te drukken een nieuwe map.
