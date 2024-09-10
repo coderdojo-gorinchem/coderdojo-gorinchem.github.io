@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.779234341960">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.779320777739">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -32,11 +32,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.779234341960" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.779320777739" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.779234341960" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.779320777739" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.779234341960" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.779320777739" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -251,10 +251,10 @@
 <li>Nadat je het installatiebestand hebt gedownload kun je het programma installeren.</li>
 <li>Zodra het programma geïnstalleerd is kun je het vinden in het menu van waaruit je programma&#x27;s opstart door de zoeken naar <em>Code</em>.</li>
 </ul>
-<doc-anchor-target id="een-map-voor-project-voorbereiden">
+<doc-anchor-target id="een-map-voor-een-project-voorbereiden">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#een-map-voor-project-voorbereiden">#</doc-anchor-trigger>
-        <span>Een map voor project voorbereiden</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#een-map-voor-een-project-voorbereiden">#</doc-anchor-trigger>
+        <span>Een map voor een project voorbereiden</span>
     </h2>
 </doc-anchor-target>
 <p>We een aantal bestanden voorbereid die het eenvoudig maken om VS Code zo te configureren dat je er optimaal mee aan CoderDojo projecten te werken, bijvoorbeeld door een aantal handige uitbreidingen te installeren. Op die manier kun je zo snel mogelijk aan het werk.</p>
@@ -279,10 +279,10 @@
 </p>
 <p>Er zou nu een <code v-pre>.vscode</code> map in de project map moeten staan.</p>
 </li>
-<li><p>Start VS Code en open de project map door op <em>Bestand</em> en dan <em>Open Map...</em> te klikken.</p>
+<li><p>Start VS Code en open de project map door op <em>File</em> en dan <em>Open Folder...</em> te klikken (of door <kbd>Ctrl/Cmd</kbd> + <kbd>k</kbd>, <kbd>Ctrl/Cmd</kbd> + <kbd>o</kbd> in te toetsen).</p>
 </li>
 <li><p>Installeer de aanbevolen extensies door naar het <em>extensies</em> menu te navigeren (het actieve item in de volgende schermafbeelding).</p>
-<p>Dit kan door er op te klikken of door op je toetsenbord de toetsen <em>Control</em> (of <em>Cmd</em> op een Mac), <em>Shift</em> en <em>x</em> tegelijkertijd in te drukken. Type in het zoekveld <code v-pre>@recommended</code> en zorg ervoor dat alle extensies geïnstalleerd zijn.</p>
+<p>Dit kan door er op te klikken of door op je toetsenbord de toetsen <kbd>Ctrl/Cmd</kbd> + <kbd>X</kbd> tegelijkertijd in te drukken. Type in het zoekveld <code v-pre>@recommended</code> en zorg ervoor dat alle extensies geïnstalleerd zijn.</p>
 <p>In sommige gevallen kan het zijn dat je VS Code opnieuw moet opstarten.</p>
 <p><img src="../../images/vscode-aanbevolen-extensies.png" alt="" /></p>
 <div class="flex mb-6">
@@ -304,7 +304,26 @@
 </div>
 </li>
 </ul>
-<p>De map is nu voorbereid. Indien je naar deze pagina doorverwezen bent vanuit een project, kun je nu teruggaan naar het project.</p>
+<p>De map is nu voorbereid. Indien je naar deze pagina doorverwezen bent vanuit een project, kun je nu teruggaan naar het project. Mocht je meer willen weten over hoe je bepaalde dingen kunt doen in VS Code, lees dan verder. Je kunt ook het menu aan de rechterkant gebruiken om direct naar een relevant onderwerp te navigeren.</p>
+<doc-anchor-target id="nieuwe-mappen-en-bestanden-maken">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#nieuwe-mappen-en-bestanden-maken">#</doc-anchor-trigger>
+        <span>Nieuwe mappen en bestanden maken</span>
+    </h2>
+</doc-anchor-target>
+<p>Het maken van nieuwe mappen of bestanden in een project map is zo gedaan vanuit VS Code. Dit gebeurt vanuit het <em>Explorer</em> paneel. Dit is het eerste paneel dat toegankelijk is vanuit de primaire toolbar. Het kan geopened worden door er op te klikken, of door de toetsen <kbd>Ctrl/Cmd</kbd> + <kbd>E</kbd> tegelijkertijd in te drukken.</p>
+<p><figure class="content-center">
+    <img src="../../images/vscode-explorer.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Na het openen van het paneel verschijnt de huidige inhoud van de geopende map. Wanneer je met je muis over de inhoud van de map heen beweegt verschijnen er 4 knoppen. De twee linker knoppen maken respectievelijk een nieuw bestand en een nieuwe map in de project map. Wanneer je een bestand of map in een andere map wilt aanmaken, dan dien je die eerst te selecteren.</p>
+<p><figure class="content-center">
+    <img src="../../images/vscode-nieuw-bestand.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Ook kun je met behulp van het toetsenbord een nieuw bestand of map aanmaken. Als het <em>Explorer</em> paneel actief is kun je door op <kbd>a</kbd> te drukken een nieuw bestand maken en door <kbd>A</kbd> in te drukken een nieuwe map.</p>
 
                                 
                                 <!-- Required only on API pages -->
