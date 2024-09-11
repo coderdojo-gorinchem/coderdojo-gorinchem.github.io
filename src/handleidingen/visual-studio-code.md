@@ -33,7 +33,7 @@ We een aantal bestanden voorbereid die het eenvoudig maken om VS Code zo te conf
 
 - Installeer de aanbevolen extensies door naar het _extensies_ menu te navigeren (het actieve item in de volgende schermafbeelding).
 
-  Dit kan door er op te klikken of door op je toetsenbord de toetsen <kbd>Ctrl/Cmd</kbd> + <kbd>X</kbd> tegelijkertijd in te drukken. Type in het zoekveld `@recommended` en zorg ervoor dat alle extensies geïnstalleerd zijn.
+  Dit kan door er op te klikken of door op je toetsenbord de toetsen <kbd>Ctrl/Cmd</kbd> + <kbd>Shift</kbd> + <kbd>x</kbd> tegelijkertijd in te drukken. Type in het zoekveld `@recommended` en zorg ervoor dat alle extensies geïnstalleerd zijn.
 
   In sommige gevallen kan het zijn dat je VS Code opnieuw moet opstarten.
 
@@ -47,7 +47,7 @@ De map is nu voorbereid. Indien je naar deze pagina doorverwezen bent vanuit een
 
 ## Nieuwe mappen en bestanden maken
 
-Het maken van nieuwe mappen of bestanden in een project map is zo gedaan vanuit VS Code. Dit gebeurt vanuit het _Explorer_ paneel. Dit is het eerste paneel dat toegankelijk is vanuit de primaire toolbar. Het kan geopened worden door er op te klikken, of door de toetsen <kbd>Ctrl/Cmd</kbd> + <kbd>E</kbd> tegelijkertijd in te drukken.
+Het maken van nieuwe mappen of bestanden in een project map is zo gedaan vanuit VS Code. Dit gebeurt vanuit het _Explorer_ paneel. Dit is het eerste paneel dat toegankelijk is vanuit de primaire toolbar. Het kan geopened worden door er op te klikken, of door de toetsen <kbd>Ctrl/Cmd</kbd> + <kbd>Shift</kbd> + <kbd>e</kbd> tegelijkertijd in te drukken.
 
 ![](/images/vscode-explorer.png)
 
