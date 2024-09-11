@@ -54,5 +54,3 @@ Het maken van nieuwe mappen of bestanden in een project map is zo gedaan vanuit 
 Na het openen van het paneel verschijnt de huidige inhoud van de geopende map. Wanneer je met je muis over de inhoud van de map heen beweegt verschijnen er 4 knoppen. De twee linker knoppen maken respectievelijk een nieuw bestand en een nieuwe map in de project map. Wanneer je een bestand of map in een andere map wilt aanmaken, dan dien je die eerst te selecteren.
 
 ![](/images/vscode-nieuw-bestand.png)
-
-Ook kun je met behulp van het toetsenbord een nieuw bestand of map aanmaken. Als het _Explorer_ paneel actief is kun je door op <kbd>a</kbd> te drukken een nieuw bestand maken en door <kbd>A</kbd> in te drukken een nieuwe map.
