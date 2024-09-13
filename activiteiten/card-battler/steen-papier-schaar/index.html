@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="nl" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.779586940566">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 3.5.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Steen, Papier, Schaar</title>
+    <meta name="title" content="Steen, Papier, Schaar">
+    <meta name="description" content="Als eerste stap in het bouwen van een card battler, gaan we een versie van steen, papier, schaar maken.">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://coderdojo-gorinchem.nl/activiteiten/card-battler/steen-papier-schaar/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coderdojo-gorinchem.nl/activiteiten/card-battler/steen-papier-schaar/">
+    <meta property="og:title" content="Steen, Papier, Schaar">
+    <meta property="og:description" content="Als eerste stap in het bouwen van een card battler, gaan we een versie van steen, papier, schaar maken.">
+    <meta property="og:image" content="https://coderdojo-gorinchem.nl/images/card-battler/vscode-live-preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://coderdojo-gorinchem.nl/activiteiten/card-battler/steen-papier-schaar/">
+    <meta property="twitter:title" content="Steen, Papier, Schaar">
+    <meta property="twitter:description" content="Als eerste stap in het bouwen van een card battler, gaan we een versie van steen, papier, schaar maken.">
+    <meta property="twitter:image" content="https://coderdojo-gorinchem.nl/images/card-battler/vscode-live-preview.png">
+
+    <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="../../../resources/css/retype.css?v=3.5.0.779586940566" rel="stylesheet">
+
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.779586940566" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.779586940566" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../../resources/js/prism.js?v=3.5.0.779586940566" defer></script>
+</head>
+<body>
+    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    
+        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+            <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="docs-sidebar-toggle"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="docs-site-logo" href="../../../" class="flex items-center leading-snug text-2xl">
+                            <span class="grow-0 shrink-0 overflow-hidden">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="../../../images/coderdojo-logo.png">
+                                <img class="max-h-10 hidden dark:inline-block" src="../../../images/coderdojo-logo.png">
+                            </span>
+                        </a>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../../blog/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                        <g fill="currentColor">
+                                            <path d="M6.75 0a.75.75 0 0 1 .75.75V3h9V.75a.75.75 0 0 1 1.5 0V3h2.75c.966 0 1.75.784 1.75 1.75v16a1.75 1.75 0 0 1-1.75 1.75H3.25a1.75 1.75 0 0 1-1.75-1.75v-16C1.5 3.784 2.284 3 3.25 3H6V.75A.75.75 0 0 1 6.75 0ZM21 9.5H3v11.25c0 .138.112.25.25.25h17.5a.25.25 0 0 0 .25-.25Zm-17.75-5a.25.25 0 0 0-.25.25V8h18V4.75a.25.25 0 0 0-.25-.25Z"/>
+                                        </g>
+                                    </svg>
+                                    <span>Nieuws</span>
+                                </a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://bibliotheekaanzet.nl/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                        <g fill="currentColor">
+                                            <path d="M6.25 12a.75.75 0 0 0 0 1.5h.5a.75.75 0 0 0 0-1.5h-.5ZM5.5 9.25a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75ZM6.25 5a.75.75 0 0 0 0 1.5h.5a.75.75 0 0 0 0-1.5h-.5ZM9 12.75a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75Zm.75-4.25a.75.75 0 0 0 0 1.5h.5a.75.75 0 0 0 0-1.5h-.5ZM9 5.75A.75.75 0 0 1 9.75 5h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 9 5.75ZM13.25 12a.75.75 0 0 0 0 1.5h.5a.75.75 0 0 0 0-1.5h-.5Zm-.75-2.75a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75ZM13.25 5a.75.75 0 0 0 0 1.5h.5a.75.75 0 0 0 0-1.5h-.5Z"/><path d="M2 20V3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v17c0 .173-.022.34-.063.5H20a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.2-.4l-.5-.375a.75.75 0 0 1 .9-1.2l.5.375c.504.378.8.97.8 1.6v8a2 2 0 0 1-2 2h-3.562a.767.767 0 0 1-.166-.018c-.089.012-.18.018-.272.018h-3.75a.75.75 0 0 1-.75-.75V19h-3v2.25a.75.75 0 0 1-.75.75H4a2 2 0 0 1-2-2Zm2 .5h3v-2.25a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 .75.75v2.25h3a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H4a.5.5 0 0 0-.5.5v17a.5.5 0 0 0 .5.5Z"/>
+                                        </g>
+                                    </svg>
+                                    <span>Bibliotheek AanZet</span>
+                                </a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://coderdojo.nl/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                        <g fill="currentColor">
+                                            <path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"/>
+                                        </g>
+                                    </svg>
+                                    <span>CoderDojo Nederland</span>
+                                </a>
+                            </li>
+        
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+                            <input class="w-full h-10 placeholder-gray-400 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 dark:placeholder-dark-400" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Zoeken">
+                        </div>
+        
+                        <!-- Mobile search button -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placeholder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="docs-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            
+                <!-- Render this div, if config.showSidebarFilter is `true` -->
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filteren">
+                </div>
+            
+                <div class="pl-6 mt-1 mb-4">
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-dark-650">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650">
+            
+                        <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                            <nav>
+                                <ul class="flex flex-wrap justify-center items-center">
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../../blog/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                                <g fill="currentColor">
+                                                    <path d="M6.75 0a.75.75 0 0 1 .75.75V3h9V.75a.75.75 0 0 1 1.5 0V3h2.75c.966 0 1.75.784 1.75 1.75v16a1.75 1.75 0 0 1-1.75 1.75H3.25a1.75 1.75 0 0 1-1.75-1.75v-16C1.5 3.784 2.284 3 3.25 3H6V.75A.75.75 0 0 1 6.75 0ZM21 9.5H3v11.25c0 .138.112.25.25.25h17.5a.25.25 0 0 0 .25-.25Zm-17.75-5a.25.25 0 0 0-.25.25V8h18V4.75a.25.25 0 0 0-.25-.25Z"/>
+                                                </g>
+                                            </svg>
+                                            <span>Nieuws</span>
+                                        </a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://bibliotheekaanzet.nl/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                                <g fill="currentColor">
+                                                    <path d="M6.25 12a.75.75 0 0 0 0 1.5h.5a.75.75 0 0 0 0-1.5h-.5ZM5.5 9.25a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75ZM6.25 5a.75.75 0 0 0 0 1.5h.5a.75.75 0 0 0 0-1.5h-.5ZM9 12.75a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75Zm.75-4.25a.75.75 0 0 0 0 1.5h.5a.75.75 0 0 0 0-1.5h-.5ZM9 5.75A.75.75 0 0 1 9.75 5h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 9 5.75ZM13.25 12a.75.75 0 0 0 0 1.5h.5a.75.75 0 0 0 0-1.5h-.5Zm-.75-2.75a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75ZM13.25 5a.75.75 0 0 0 0 1.5h.5a.75.75 0 0 0 0-1.5h-.5Z"/><path d="M2 20V3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v17c0 .173-.022.34-.063.5H20a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.2-.4l-.5-.375a.75.75 0 0 1 .9-1.2l.5.375c.504.378.8.97.8 1.6v8a2 2 0 0 1-2 2h-3.562a.767.767 0 0 1-.166-.018c-.089.012-.18.018-.272.018h-3.75a.75.75 0 0 1-.75-.75V19h-3v2.25a.75.75 0 0 1-.75.75H4a2 2 0 0 1-2-2Zm2 .5h3v-2.25a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 .75.75v2.25h3a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H4a.5.5 0 0 0-.5.5v17a.5.5 0 0 0 .5.5Z"/>
+                                                </g>
+                                            </svg>
+                                            <span>Bibliotheek AanZet</span>
+                                        </a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://coderdojo.nl/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                                <g fill="currentColor">
+                                                    <path d="M20.322.75h1.176a1.75 1.75 0 0 1 1.75 1.749v1.177a10.75 10.75 0 0 1-2.925 7.374l-1.228 1.304a23.699 23.699 0 0 1-1.596 1.542v5.038c0 .615-.323 1.184-.85 1.5l-4.514 2.709a.75.75 0 0 1-1.12-.488l-.963-4.572a1.305 1.305 0 0 1-.14-.129L8.04 15.96l-1.994-1.873a1.305 1.305 0 0 1-.129-.14l-4.571-.963a.75.75 0 0 1-.49-1.12l2.71-4.514c.316-.527.885-.85 1.5-.85h5.037a23.668 23.668 0 0 1 1.542-1.594l1.304-1.23A10.753 10.753 0 0 1 20.321.75Zm-6.344 4.018v-.001l-1.304 1.23a22.275 22.275 0 0 0-3.255 3.851l-2.193 3.29 1.859 1.744a.545.545 0 0 1 .034.034l1.743 1.858 3.288-2.192a22.263 22.263 0 0 0 3.854-3.257l1.228-1.303a9.251 9.251 0 0 0 2.517-6.346V2.5a.25.25 0 0 0-.25-.25h-1.177a9.252 9.252 0 0 0-6.344 2.518ZM6.5 21c-1.209 1.209-3.901 1.445-4.743 1.49a.236.236 0 0 1-.18-.067.236.236 0 0 1-.067-.18c.045-.842.281-3.534 1.49-4.743.9-.9 2.6-.9 3.5 0 .9.9.9 2.6 0 3.5Zm-.592-8.588L8.17 9.017c.23-.346.47-.685.717-1.017H5.066a.25.25 0 0 0-.214.121l-2.167 3.612ZM16 15.112c-.333.248-.672.487-1.018.718l-3.393 2.262.678 3.223 3.612-2.167a.25.25 0 0 0 .121-.214ZM17.5 8a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 17.5 8Z"/>
+                                                </g>
+                                            </svg>
+                                            <span>CoderDojo Nederland</span>
+                                        </a>
+                                    </li>
+            
+                                </ul>
+                            </nav>
+                        </div>
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 dark:bg-dark-850">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
+                            <div class="docs-markdown" id="docs-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="docs-sidebar-right-toggle"></div>
+                                <!-- Page content  -->
+<doc-anchor-target id="steen-papier-schaar" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#steen-papier-schaar">#</doc-anchor-trigger>
+        <span>Steen, Papier, Schaar</span>
+    </h1>
+</doc-anchor-target>
+<div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
+    <div>In&nbsp;</div>
+    <div><a href="../../../categories/activiteiten/">Activiteiten</a></div>
+</div>
+
+<!-- TODO: Screenshot van het eindresultaat -->
+<p>Als eerste stap in het bouwen van een card battler, gaan we een versie van <em>steen, papier, schaar</em> maken.</p>
+<p>Voor deze activiteit heb je Visual Studio Code nodig en een project map. Indien je deze nog niet op je computer geïnstalleerd hebt, volg dan <a href="../../../handleidingen/visual-studio-code/">deze handleiding</a>.</p>
+<doc-anchor-target id="voorbereiding">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#voorbereiding">#</doc-anchor-trigger>
+        <span>Voorbereiding</span>
+    </h2>
+</doc-anchor-target>
+<p>Als eerste hebben we een bestand nodig waar we het spel in gaan schrijven. Maak in de project map een nieuw bestand met de naam <code v-pre>index.html</code>, open het bestand en voeg de volgende inhoud aan het bestand toe. Dit zorgt er voor dat we het spel kunnen gaan bouwen en dat het er goed uit gaat zien als we klaar zijn.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">Lege pagina template</div>
+<pre class="language-markup"><code v-pre class="language-markup">&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Card Battler - Steen, Papier, Schaar&lt;/title&gt;
+
+    &lt;link
+      rel=&quot;stylesheet&quot;
+      media=&quot;(prefers-color-scheme:light)&quot;
+      href=&quot;https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/themes/light.css&quot;
+    /&gt;
+    &lt;link
+      rel=&quot;stylesheet&quot;
+      media=&quot;(prefers-color-scheme:dark)&quot;
+      href=&quot;https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/themes/dark.css&quot;
+      onload=&quot;document.documentElement.classList.add('sl-theme-dark');&quot;
+    /&gt;
+
+    &lt;script
+      type=&quot;module&quot;
+      src=&quot;https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/shoelace-autoloader.js&quot;
+    &gt;&lt;/script&gt;
+
+    &lt;style&gt;
+      html {
+        background-color: var(--sl-color-neutral-0);
+        font-family: var(--sl-font-sans);
+      }
+
+      :not(:defined) {
+        visibility: hidden;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    Hallo, Steen, Papier, Schaar!
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</doc-codeblock></div>
+<p>Toets nu <kbd>Ctrl/Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> in en type <em>liprin</em>, kort voor <em>Live Preview: Show Preview (Internal Browser)</em>, gevolgd door <kbd>Enter</kbd>. Er verschijnt nu een browser venster naast de zojuist getypte code die de pagina laat zien.</p>
+<p><figure class="content-center">
+    <img src="../../../images/card-battler/vscode-live-preview.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Deze preview kun je open laten staan terwijl je aan het project werkt. De pagina zal automatisch de veranderingen die gemaakt worden in de editor oppikken. Probeer <em>Hallo</em> maar eens te veranderen in <em>Tot ziens</em> en zie hoe de preview updatet terwijl je typt. Mocht je de preview per ongeluk sluiten, dan kun je hem weer openen met de instructies in de vorige paragraaf.</p>
+<p>Om de volgende tekst iets begrijpbaarder te houden introduceren we een naam voor de stukjes tekst die in vishaakjes (<code v-pre>&lt;</code> en <code v-pre>&gt;</code>) geschreven zijn. Deze stukjes tekst noemen we <em>tags</em>. Bijvoorbeeld <code v-pre>&lt;body&gt;</code> noemen we de &quot;body tag&quot; en <code v-pre>&lt;title&gt;</code> noemen we de &quot;title tag&quot;. De meeste tags hebben een begin (<code v-pre>&lt;body&gt;</code>, <code v-pre>&lt;title&gt;</code>) en een eind (<code v-pre>&lt;/body&gt;</code>, <code v-pre>&lt;/title&gt;</code>), wanneer we de tekst tussen deze tags willen aanpassen, dan zeggen we &quot;wijzig de tekst binnen de body-tags&quot;.</p>
+<doc-anchor-target id="het-speelveld">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#het-speelveld">#</doc-anchor-trigger>
+        <span>Het speelveld</span>
+    </h2>
+</doc-anchor-target>
+<p><em>Steen, papier, schaar</em> wordt gespeeld met 2 spelers, met elk 3 acties die gespeeld kunnen worden. We zullen dit visualiseren als 2 spelers die tegenover elkaar zitten, elk 3 kaarten vast hebben met ruimte tussen de sets kaarten in om een kaart te kunnen spelen.</p>
+<p>Schematisch ziet dat er als volgt uit</p>
+<p><figure class="content-center">
+    <img src="../../../images/card-battler/steen-papier-schaar-speelveld.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>HTML pagina&#x27;s worden opgebouwd door middel van &quot;rechthoekige blokken&quot;. In de schematische weergave hierboven zijn deze blokken goed zichtbaar. Een veel gebruikte &quot;tag&quot; om deze blokken op te kunnen bouwen is de <code v-pre>div</code>-tag. Laten we stap voor stap het speelveld opbouwen door gebruik te maken van deze tag.</p>
+<p>Als eerste hebben we drie blokken nodig die op elkaar gestapeld staan. Dit zijn het blok waar de kaarten van de tegenstander in liggen, het blok waar de gespeelde kaarten in terecht komen en het blok waar de kaarten van de speler in liggen. Vervang de tekst in de <code v-pre>body</code>-tag door de volgende drie regels.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-markup" data-line="2-4"><code v-pre class="language-markup">&lt;body&gt;
+  &lt;div class=&quot;kaarten&quot; id=&quot;tegenstander&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;kaarten&quot; id=&quot;gespeelde-kaarten&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;kaarten&quot; id=&quot;speler&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;</code></pre>
+</doc-codeblock></div>
+<p>De <code v-pre>id</code> namen helpen ons later om kaarten tussen de verschillende blokken heen en weer te bewegen en de <code v-pre>class</code> zorgt er voor dat we de blokken er eenvoudig hetzelfde uit kunnen laten zien.</p>
+<p>Door deze verandering is er nu niets meer zichtbaar op de pagina. Laten we de blokken een kleurtje geven zodat we ze weer kunnen zien. Zoek de <code v-pre>style</code>-tag en voeg gemarkeerde code toe.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-css" data-line="5-21"><code v-pre class="language-css">html {
+  background-color: var(--sl-color-neutral-0);
+  font-family: var(--sl-font-sans);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100dvh;
+  margin: 0;
+}
+
+#gespeelde-kaarten {
+  background-color: var(--sl-color-blue-400);
+}
+
+#speler,
+#tegenstander {
+  background-color: var(--sl-color-red-400);
+}</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-css" data-line="4-10"><code v-pre class="language-css">:not(:defined) {
+  visibility: hidden;
+}
+
+.kaarten {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}</code></pre>
+</doc-codeblock></div>
+<p>Deze code zorgt er voor dat het spel straks het hele scherm in beslag neemt en dat de kaarten netjes over de beschikbare ruimte worden verdeeld. Het scherm zou er nu als volgt uit moeten zien.</p>
+<p><figure class="content-center">
+    <img src="../../../images/card-battler/vscode-speelveld-layout.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Nu we gezien hebben hoe alles er ongeveer uit komt te zien, kunnen we de kleuren weer verwijderen en kaarten toevoegen. Verwijder de volgende code.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-css"><code v-pre class="language-css">#gespeelde-kaarten {
+  background-color: var(--sl-color-blue-400);
+}
+
+#speler,
+#tegenstander {
+  background-color: var(--sl-color-red-400);
+}</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="de-kaarten-toevoegen-aan-het-speelveld">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#de-kaarten-toevoegen-aan-het-speelveld">#</doc-anchor-trigger>
+        <span>De kaarten toevoegen aan het speelveld</span>
+    </h2>
+</doc-anchor-target>
+<p>Nu we het speelveld hebben opgebouwd kunnen we de kaarten gaan toevoegen. Hiervoor gebruiken we <a href="https://shoelace.style/components/card">een speciale &quot;kaart&quot; tag</a> waardoor we het spel er eenvoudig goed uit kunnen laten zien.</p>
+<p>We gaan in totaal 6 kaarten toevoegen:</p>
+<ol>
+<li>Een kaart voor steen,</li>
+<li>Een kaart voor papier,</li>
+<li>Een kaart voor schaar.</li>
+</ol>
+<p>En dat voor 2 spelers. Aan elke kaart gaan we wat informatie toevoegen die aangeeft welke kaart het is, welke andere kaart de kaart verslaat en van wie de kaart is. De &quot;template&quot; voor elke kaart is als volgt:</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-markup"><code v-pre class="language-markup">&lt;sl-card data-eigenaar=&quot;&lt;...&gt;&quot; data-type=&quot;&lt;...&gt;&quot; data-verslaat=&quot;&lt;...&gt;&quot;&gt;
+  &lt;img src=&quot;&lt;de URL naar een plaatje&gt;&quot; slot=&quot;image&quot; /&gt;
+
+  Tekst voor op de kaart
+&lt;/sl-card&gt;</code></pre>
+</doc-codeblock></div>
+<p>Deze template gaan we 3 keer toevoegen aan de <code v-pre>div</code>-tag met <code v-pre>id=&quot;tegenstander&quot;</code> en 3 keer aan de <code v-pre>div</code>-tag met <code v-pre>id=&quot;speler&quot;</code>. De waardes voor de <code v-pre>data</code> &quot;attributen&quot; staan in de volgende tabel:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th><code v-pre>data-eigenaar</code></th>
+<th><code v-pre>data-type</code></th>
+<th><code v-pre>data-verslaat</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>speler</td>
+<td>steen</td>
+<td>schaar</td>
+</tr>
+<tr>
+<td>speler</td>
+<td>papier</td>
+<td>steen</td>
+</tr>
+<tr>
+<td>speler</td>
+<td>schaar</td>
+<td>papier</td>
+</tr>
+<tr>
+<td>tegenstander</td>
+<td>steen</td>
+<td>schaar</td>
+</tr>
+<tr>
+<td>tegenstander</td>
+<td>papier</td>
+<td>steen</td>
+</tr>
+<tr>
+<td>tegenstander</td>
+<td>schaar</td>
+<td>papier</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Voor de <em>Tekst op de kaart</em> mag je invullen wat je wilt. Het <code v-pre>src</code>-attribuut van de <code v-pre>img</code>-tag moet verwijzen naar een plaatje. Je kunt bijvoorveeld via <a href="https://www.google.com/imghp">Google</a> zoeken naar een plaatje, met de rechtermuisknop er op klikken en op <em>Kopieer adres van afbeelding</em> te klikken. Het adres kun je dan tussen de quotes van het <code v-pre>src</code>-attribuut plakken.</p>
+<p>Je kunt natuurlijk ook je eigen plaatjes tekenen. Je kunt dan een map aanmaken in de project map met de naam <code v-pre>images</code> en dan als <code v-pre>src</code>-attribuut <code v-pre>./images/naam-van-het-plaatje.extensie</code> gebruiken.</p>
+<p>Bijvoorbeeld</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-markup"><code v-pre class="language-markup">&lt;sl-card data-eigenaar=&quot;speler&quot; data-type=&quot;steen&quot; data-verslaat=&quot;schaar&quot;&gt;
+  &lt;img
+    src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4NHXKc00snTqu3cBFIltHOvrKBHO-vtC24w&quot;
+    slot=&quot;image&quot;
+  /&gt;
+
+  Steen
+&lt;/sl-card&gt;</code></pre>
+</doc-codeblock></div>
+<p>wordt de kaart</p>
+<p><figure class="content-center">
+    <img src="../../../images/card-battler/steen-kaart.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Als je klaar bent, dan zou de code er tussen de <code v-pre>body</code>-tags er ongeveer als volgt uit moeten zien.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-markup" data-line="2-54"><code v-pre class="language-markup">&lt;body&gt;
+  &lt;div class=&quot;kaarten&quot; id=&quot;tegenstander&quot;&gt;
+    &lt;sl-card
+      data-eigenaar=&quot;tegenstander&quot;
+      data-type=&quot;steen&quot;
+      data-verslaat=&quot;schaar&quot;
+    &gt;
+      &lt;img src=&quot;...&quot; slot=&quot;image&quot; /&gt;
+
+      Steen
+    &lt;/sl-card&gt;
+
+    &lt;sl-card
+      data-eigenaar=&quot;tegenstander&quot;
+      data-type=&quot;papier&quot;
+      data-verslaat=&quot;steen&quot;
+    &gt;
+      &lt;img src=&quot;...&quot; slot=&quot;image&quot; /&gt;
+
+      Papier
+    &lt;/sl-card&gt;
+
+    &lt;sl-card
+      data-eigenaar=&quot;tegenstander&quot;
+      data-type=&quot;schaar&quot;
+      data-verslaat=&quot;papier&quot;
+    &gt;
+      &lt;img src=&quot;...&quot; slot=&quot;image&quot; /&gt;
+
+      Schaar
+    &lt;/sl-card&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;kaarten&quot; id=&quot;gespeelde-kaarten&quot;&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;kaarten&quot; id=&quot;speler&quot;&gt;
+    &lt;sl-card data-eigenaar=&quot;speler&quot; data-type=&quot;steen&quot; data-verslaat=&quot;schaar&quot;&gt;
+      &lt;img src=&quot;...&quot; slot=&quot;image&quot; /&gt;
+
+      Steen
+    &lt;/sl-card&gt;
+
+    &lt;sl-card data-eigenaar=&quot;speler&quot; data-type=&quot;papier&quot; data-verslaat=&quot;steen&quot;&gt;
+      &lt;img src=&quot;...&quot; slot=&quot;image&quot; /&gt;
+
+      Papier
+    &lt;/sl-card&gt;
+
+    &lt;sl-card data-eigenaar=&quot;speler&quot; data-type=&quot;schaar&quot; data-verslaat=&quot;papier&quot;&gt;
+      &lt;img src=&quot;...&quot; slot=&quot;image&quot; /&gt;
+
+      Schaar
+    &lt;/sl-card&gt;
+  &lt;/div&gt;
+&lt;/body&gt;</code></pre>
+</doc-codeblock></div>
+<p>Om er voor te zorgen dat de kaarten allemaal even groot zijn, voegen we ook nog de gemarkeerde code toe aan de <code v-pre>style</code>-tag.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-css" data-line="4-7"><code v-pre class="language-css">:not(:defined) {
+  visibility: hidden;
+}
+
+sl-card {
+  width: 15%;
+}</code></pre>
+</doc-codeblock></div>
+<p>Het spel zou er dan ongeveer als volgt uit moeten zien.</p>
+<p><figure class="content-center">
+    <img src="../../../images/card-battler/vscode-kaarten.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="een-kaart-spelen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#een-kaart-spelen">#</doc-anchor-trigger>
+        <span>Een kaart spelen</span>
+    </h2>
+</doc-anchor-target>
+<p>Nu we het speelveld hebben vorm gegeven en de kaarten hebben toegevoegd, is het tijd om aan de logica van het spel te beginnen. Als eerste stap gaan het mogelijk maken om een kaart te spelen. Dat houdt in dat we op een kaart in de hand van de &quot;speler&quot; kunnen klikken en dat deze naar het midden van het speelveld bewogen wordt.</p>
+<p>De logica voor het spel schrijven we in een <code v-pre>script</code>-tag. Deze voegen we toe na de <code v-pre>&lt;/body&gt;</code>-tag, maar voor de <code v-pre>&lt;/html&gt;</code>-tag.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-markup" data-line="2-4"><code v-pre class="language-markup">  &lt;/body&gt;
+
+  &lt;script&gt;
+  &lt;/script&gt;
+&lt;/html&gt;</code></pre>
+</doc-codeblock></div>
+<p>Tenzij anders vermeld kun je er van uitgaan dat vanaf nu alle code binnen de <code v-pre>script</code>-tags geplaatst wordt. Zodra we de beginselen van de logica van het spel hebben geïmplementeerd, zullen we weer andere delen van de pagina aanpassen.</p>
+<p>Als eerste zoeken we alle kaarten van de speler bij elkaar en zorgen er voor dat als er op een kaart geklikt wordt dat er een ronde gespeeld wordt.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">const spelerContainer = document.getElementById(&quot;speler&quot;);
+
+spelerContainer
+  .querySelectorAll(&quot;sl-card&quot;)
+  .forEach((kaart) =&gt;
+    kaart.addEventListener(&quot;click&quot;, (e) =&gt;
+      speelRonde(e.target.closest(&quot;sl-card&quot;)),
+    ),
+  );</code></pre>
+</doc-codeblock></div>
+<p>Wanneer er nu op een kaar geklikt wordt de <code v-pre>speelRonde</code> functie aangeroepen. Maar die hebben we nog niet geschreven, dus gebeurt er nog niets als je klikt. In de volgende stap schrijven we twee nieuwe functies:</p>
+<ol>
+<li><code v-pre>speelRonde</code> waar we de logica gaan schrijven die een hele ronde speelt.</li>
+<li><code v-pre>speelKaart</code> die een enkele kaart van een &quot;hand&quot; naar het midden van het speelveld verplaatst.</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript" data-line="1-8"><code v-pre class="language-javascript">  function speelKaart(kaart) {
+    kaart.parentNode.removeChild(kaart);
+    gespeeldeKaarten.appendChild(kaart);
+  }
+
+  function speelRonde(spelerKaart) {
+    speelKaart(spelerKaart);
+  }
+&lt;/script&gt;</code></pre>
+</doc-codeblock></div>
+<p>Ook hebben we een referentie nodig naar het midden van het speelveld. Voeg de gemarkeerde code toe.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript" data-line="1"><code v-pre class="language-javascript">const gespeeldeKaarten = document.getElementById(&quot;gespeelde-kaarten&quot;);
+const spelerContainer = document.getElementById(&quot;speler&quot;);</code></pre>
+</doc-codeblock></div>
+<p>Elke keer als je nu op een kaart in de hand van de speler klikt, wordt deze naar het midden van het speelveld verplaatst.</p>
+<doc-anchor-target id="de-tegenstander-een-kaart-laten-spelen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#de-tegenstander-een-kaart-laten-spelen">#</doc-anchor-trigger>
+        <span>De tegenstander een kaart laten spelen</span>
+    </h2>
+</doc-anchor-target>
+<p>Van in je eentje spelen is natuurlijk snel de lol af, dus wanneer wij een kaart spelen, willen we dat de tegenstander (gespeeld door de computer) ook een kaart kiest. We kunnen hiervoor een functie schrijven die een willekeurige kaart kiest uit de hand van de tegenstander. Deze functie kunnen we dan aanroepen vanuit de <code v-pre>speelRonde</code> functie. Voeg de volgende functie toe na de definitie van de <code v-pre>speelRonde</code> functie.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">function speelTegenstanderKaart() {
+  const kaarten = document
+    .getElementById(&quot;tegenstander&quot;)
+    .querySelectorAll(&quot;sl-card&quot;);
+
+  const geselecteerdeKaart =
+    kaarten[Math.floor(Math.random() * kaarten.length)];
+  speelKaart(geselecteerdeKaart);
+
+  return geselecteerdeKaart;
+}</code></pre>
+</doc-codeblock></div>
+<p>En de volgende regel om er voor te zorgen dat de kaarten in de hand van de tegenstander door de functie gevonden kunnen worden.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript" data-line="2"><code v-pre class="language-javascript">const spelerContainer = document.getElementById(&quot;speler&quot;);
+const tegenstanderContainer = document.getElementById(&quot;tegenstander&quot;);</code></pre>
+</doc-codeblock></div>
+<p>De <code v-pre>speelRonde</code> functie kunnen we dan als volgt aanpassen.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript" data-line="3"><code v-pre class="language-javascript">function speelRonde(spelerKaart) {
+  speelKaart(spelerKaart);
+  speelTegenstanderKaart();
+}</code></pre>
+</doc-codeblock></div>
+<p>Wanneer we nu een kaart spelen, zal de computer er ook een spelen.</p>
+<doc-anchor-target id="een-ronde-tegelijk-spelen">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#een-ronde-tegelijk-spelen">#</doc-anchor-trigger>
+        <span>Een ronde tegelijk spelen</span>
+    </h2>
+</doc-anchor-target>
+<p>Als er te veel kaarten na elkaar gespeeld worden, dan wordt het midden van het speelveld al snel een rommel. Daarom gaan we het spel aanpassen, zodat je maar 1 kaart per ronde kunt spelen. Waarna de kaarten van iedereen teruggegeven worden.</p>
+<p>Om dit mogelijk te maken gaan we eerst de opmaak van het speelveld een klein beetje aanpassen. We gaan een knop toevoegen waar je op kunt klikken om de volgende ronde te starten. Zoek de gemarkeerde regel en vervang de regel door de volgende code.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-markup" data-line="2"><code v-pre class="language-markup">&lt;div id=&quot;arena&quot;&gt;
+  &lt;div class=&quot;kaarten&quot; id=&quot;gespeelde-kaarten&quot;&gt;&lt;/div&gt;
+  &lt;sl-button class=&quot;hidden&quot; id=&quot;volgende-ronde&quot;&gt;Volgende Ronde&lt;/sl-button&gt;
+&lt;/div&gt;</code></pre>
+</doc-codeblock></div>
+<p>We hebben vervolgens ook wat extra styling nodig om de knop te verbergen als een ronde nog niet klaar is en om ervoor te zorgen dat er wat ruimte is tussen de knop en de gespeelde kaarten.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-css" data-line="1-4,9-15"><code v-pre class="language-css">sl-button.hidden {
+  display: none;
+}
+
+sl-card {
+  width: 15%;
+}
+
+#arena {
+  text-align: center;
+
+  &amp; &gt; * {
+    margin-block-start: var(--sl-spacing-large);
+  }
+}</code></pre>
+</doc-codeblock></div>
+<p>Vervolgens kunnen we de volgende code toevoegen aan de <code v-pre>script</code>-tags om er voor te zorgen dat de knop wordt weergegeven aan het einde van een ronde.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript" data-line="2"><code v-pre class="language-javascript">const tegenstanderContainer = document.getElementById(&quot;tegenstander&quot;);
+const volgendeRondeKnop = document.getElementById(&quot;volgende-ronde&quot;);</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript" data-line="2-3"><code v-pre class="language-javascript">speelTegenstanderKaart();
+
+volgendeRondeKnop.classList.remove(&quot;hidden&quot;);</code></pre>
+</doc-codeblock></div>
+<p>We kunnen er ook voor zorgen dat er geen nieuwe kaarten gespeeld kunnen worden aan het eind van de ronde.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript" data-line="2-5"><code v-pre class="language-javascript">    function speelRonde(spelerKaart) {
+      if (!volgendeRondeKnop.classList.contains(&quot;hidden&quot;)) {
+        return;
+      }
+
+      speelKaart(spelerKaart);</code></pre>
+</doc-codeblock></div>
+<p>Tot slot kunnen we er voor zorgen dat als er op de knop geklikt wordt dat alle kaarten terug naar de respectievelijke handen verplaatst worden. Voeg de volgende functie toe vlak voor de <code v-pre>&lt;/script&gt;</code>-tag.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">function volgendeRonde() {
+  gespeeldeKaarten.querySelectorAll(&quot;sl-card&quot;).forEach((kaart) =&gt; {
+    kaart.parentNode.removeChild(kaart);
+    document.getElementById(kaart.dataset.eigenaar).appendChild(kaart);
+  });
+
+  volgendeRondeKnop.classList.add(&quot;hidden&quot;);
+}</code></pre>
+</doc-codeblock></div>
+<p>En roep de functie aan als er op de knop geklikt wordt.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript" data-line="2"><code v-pre class="language-javascript">const volgendeRondeKnop = document.getElementById(&quot;volgende-ronde&quot;);
+volgendeRondeKnop.addEventListener(&quot;click&quot;, volgendeRonde);</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="klaar">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#klaar">#</doc-anchor-trigger>
+        <span>&quot;Klaar&quot;!</span>
+    </h2>
+</doc-anchor-target>
+<p>Je hebt zojuist een Steen, Papier, Schaar spel gemaakt! Er zijn nog veel uitbreidingsmogelijkheden. Hieronder geven we een paar ideeën, maar je kunt natuurlijk je fantasie de vrije loop laten.</p>
+
+                                <div class="flex items-center mt-6 mb-6 clear-both">
+                                    <span>
+                                        <a href="../../../tags/">
+                                            <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
+                                        </a>
+                                        <span class="mr-2"><a href="../../../tags/css/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>css</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../../../tags/html/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>html</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../../../tags/javascript/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>javascript</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../../../tags/spel/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>spel</span>
+                                </a></span>
+                                    </span>
+                                </div>
+                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+                            </div>
+                            <footer class="clear-both">
+                            
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../activiteiten/card-battler/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Vorige</span>
+                                                <span class="block mt-1">Card Battler</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../activiteiten/codecademy/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Volgende</span>
+                                                <span class="block mt-1">Codecademy</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between">
+                                <div>
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                    </ul>
+                                </div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2024. All rights reserved.</p></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="docs-overlay-target"></div>
+
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Steen, Papier, Schaar", level: 3, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+</body>
+</html>
