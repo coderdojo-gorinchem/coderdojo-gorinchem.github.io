@@ -16,9 +16,9 @@ jobs:
     steps:
       - uses: "actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332" # v4.1.7
 
-      - uses: "retypeapp/action-build@0f5c1e55453d13ec21ac8c441c9ebce6b2c4b0b0" # v3.6.0
+      - uses: "retypeapp/action-build@0f5c1e55453d13ec21ac8c441c9ebce6b2c4b0b0" # v3.7.0
 
-      - uses: "retypeapp/action-github-pages@5a952a4f53fc7366288db464ec120f755e9f1303" # v3.6.0
+      - uses: "retypeapp/action-github-pages@5a952a4f53fc7366288db464ec120f755e9f1303" # v3.7.0
         with:
           branch: "gh-pages"
           update-branch: true
