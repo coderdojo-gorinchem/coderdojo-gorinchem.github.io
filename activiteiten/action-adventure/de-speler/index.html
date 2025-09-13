@@ -9,32 +9,34 @@
     <meta name="generator" content="Retype 3.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Zombie Shooter</title>
-    <meta name="title" content="Zombie Shooter">
-    <meta name="description" content="Sprites">
+    <title>De Speler</title>
+    <meta name="title" content="De Speler">
+    <meta name="description" content="Misschien wel het allerbelangrijkste aan ieder spel is het karakter van de speler.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://coderdojo-gorinchem.nl/activiteiten/zombie-shooter/">
+    <link rel="canonical" href="https://coderdojo-gorinchem.nl/activiteiten/action-adventure/de-speler/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://coderdojo-gorinchem.nl/activiteiten/zombie-shooter/">
-    <meta property="og:title" content="Zombie Shooter">
-    <meta property="og:description" content="Sprites">
+    <meta property="og:url" content="https://coderdojo-gorinchem.nl/activiteiten/action-adventure/de-speler/">
+    <meta property="og:title" content="De Speler">
+    <meta property="og:description" content="Misschien wel het allerbelangrijkste aan ieder spel is het karakter van de speler.">
+    <meta property="og:image" content="https://coderdojo-gorinchem.nl/activiteiten/action-adventure/resources/godot-scene-tree-empty.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://coderdojo-gorinchem.nl/activiteiten/zombie-shooter/">
-    <meta property="twitter:title" content="Zombie Shooter">
-    <meta property="twitter:description" content="Sprites">
+    <meta property="twitter:url" content="https://coderdojo-gorinchem.nl/activiteiten/action-adventure/de-speler/">
+    <meta property="twitter:title" content="De Speler">
+    <meta property="twitter:description" content="Misschien wel het allerbelangrijkste aan ieder spel is het karakter van de speler.">
+    <meta property="twitter:image" content="https://coderdojo-gorinchem.nl/activiteiten/action-adventure/resources/godot-scene-tree-empty.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.6.0.811037428094" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.6.0.811037428094" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.811037428094" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.811037428094" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.6.0.811037428094" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.6.0.811037428094" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -49,10 +51,10 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-2xl">
+                        <a id="docs-site-logo" href="../../../" class="flex items-center leading-snug text-2xl">
                             <span class="grow-0 shrink-0 overflow-hidden">
-                                <img class="max-h-10 dark:hidden md:inline-block" src="../../images/coderdojo-logo.png">
-                                <img class="max-h-10 hidden dark:inline-block" src="../../images/coderdojo-logo.png">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="../../../images/coderdojo-logo.png">
+                                <img class="max-h-10 hidden dark:inline-block" src="../../../images/coderdojo-logo.png">
                             </span>
                         </a>
                     </div>
@@ -65,7 +67,7 @@
                     <nav class="hidden md:flex">
                         <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
                             <li class="mr-6">
-                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../blog/">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../../blog/">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                         <g fill="currentColor">
                                             <path d="M6.75 0a.75.75 0 0 1 .75.75V3h9V.75a.75.75 0 0 1 1.5 0V3h2.75c.966 0 1.75.784 1.75 1.75v16a1.75 1.75 0 0 1-1.75 1.75H3.25a1.75 1.75 0 0 1-1.75-1.75v-16C1.5 3.784 2.284 3 3.25 3H6V.75A.75.75 0 0 1 6.75 0ZM21 9.5H3v11.25c0 .138.112.25.25.25h17.5a.25.25 0 0 0 .25-.25Zm-17.75-5a.25.25 0 0 0-.25.25V8h18V4.75a.25.25 0 0 0-.25-.25Z"/>
@@ -169,7 +171,7 @@
                             <nav>
                                 <ul class="flex flex-wrap justify-center items-center">
                                     <li class="mr-6">
-                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../blog/">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../../blog/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                                 <g fill="currentColor">
                                                     <path d="M6.75 0a.75.75 0 0 1 .75.75V3h9V.75a.75.75 0 0 1 1.5 0V3h2.75c.966 0 1.75.784 1.75 1.75v16a1.75 1.75 0 0 1-1.75 1.75H3.25a1.75 1.75 0 0 1-1.75-1.75v-16C1.5 3.784 2.284 3 3.25 3H6V.75A.75.75 0 0 1 6.75 0ZM21 9.5H3v11.25c0 .138.112.25.25.25h17.5a.25.25 0 0 0 .25-.25Zm-17.75-5a.25.25 0 0 0-.25.25V8h18V4.75a.25.25 0 0 0-.25-.25Z"/>
@@ -220,43 +222,218 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="zombie-shooter" class="break-words">
+<doc-anchor-target id="de-speler" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#zombie-shooter">#</doc-anchor-trigger>
-        <span>Zombie Shooter</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#de-speler">#</doc-anchor-trigger>
+        <span>De Speler</span>
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
     <div>In&nbsp;</div>
-    <div><a href="../../categories/activiteiten/">Activiteiten</a></div>
+    <div><a href="../../../categories/activiteiten/">Activiteiten</a></div>
 </div>
 
-<p>
-<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
-    <div class="flex items-center text-blue-500 dark:text-blue-400">
-        <span class="inline-block mb-px">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M21 14c-.55 0-1 .45-1 1v4c0 .55-.45 1-1 1H5c-.55 0-1-.45-1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-4c0-.55-.45-1-1-1z"/><path d="M11.29 15.71c.09.09.2.17.33.22.12.04.25.07.38.07s.26-.03.38-.08.23-.12.33-.22l5-5a.996.996 0 10-1.41-1.41l-3.3 3.3V3c0-.55-.45-1-1-1s-1 .45-1 1v9.59l-3.29-3.3A.996.996 0 106.3 10.7l4.99 5.01z"/></svg>
-        </span>
-        <span class="inline-block font-medium ml-2">Sprites</span>
-    </div>
-    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
-        <span>zombie-shooter.zip</span>
-        <span class="inline-block ml-2">26KB</span>
-    </div>
-    <a href="../../files/zombie-shooter.zip" class="absolute block inset-0" target="_blank" download="zombie-shooter.zip"></a>
-</div>
+<p>Misschien wel het allerbelangrijkste aan ieder spel is het karakter van de speler. Dit is dan ook het eerste aspect van het spel waar we aan gaan werken. Voordat we gaan beginnen, maken we nogmaals een kleine tussenstop voor een korte uitleg.</p>
+<doc-anchor-target id="scenes-en-nodes">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#scenes-en-nodes">#</doc-anchor-trigger>
+        <span><em>Scenes</em> en <em>Nodes</em></span>
+    </h2>
+</doc-anchor-target>
+<p>Linksbovenin in de interface van Godot zien we de &quot;scene tree&quot;.</p>
+<p><figure class="content-center">
+    <img src="../resources/godot-scene-tree-empty.png" alt="De lege &quot;scene tree&quot;">
+    <figcaption class="caption">De lege &quot;scene tree&quot;</figcaption>
+</figure>
 </p>
-<p><a href="https://scratch.mit.edu/projects/1160930349">Voortgang CoderDojo Zaterdag 12 april 2025</a></p>
+<p>De &quot;scene tree&quot; geeft een overzicht van de verschillende &quot;nodes&quot; in de actieve &quot;scene&quot;. Maar wat <em>zijn</em> scenes en nodes?</p>
+<ul>
+<li>Nodes zijn de basisbouwblokken in Godot. Nodes worden gebruikt om eigenschappen van &quot;dingen&quot; in de spelwereld te beschrijven. Bijvoorbeeld:
+<ul>
+<li>Hoe de speler er uit ziet.</li>
+<li>Wat voor geluid de speler maakt tijdens het lopen.</li>
+<li>Welke karakters en monsters er rond lopen in een gebied.</li>
+<li>Welke achtergrond muziek er speelt, etc.</li>
+</ul>
+</li>
+<li>Scenes zijn groepen van nodes. Deze groepen kunnen eventueel worden hergebruikt. Bijvoorbeeld:
+<ul>
+<li>De speler</li>
+<li>Een vijand</li>
+<li>Een level</li>
+</ul>
+</li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Dit klinkt waarschijnlijk op dit moment nog een beetje abstract, maar zodra we scenes en nodes gaan bouwen en gebruiken wordt alles snel duidelijk!</p>
+        </div>
+    </div>
+</div>
+<p>Aangezien we een 2D spel aan het maken zijn, zullen we vooral gebruik maken van 2D &quot;nodes&quot;.</p>
+<doc-anchor-target id="het-uiterlijk-van-de-speler">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#het-uiterlijk-van-de-speler">#</doc-anchor-trigger>
+        <span>Het uiterlijk van de speler</span>
+    </h2>
+</doc-anchor-target>
+<p>Zoals eerder genoemd kan de speler worden beschreven met behulp van een &quot;scene&quot; welke alle eigenschappen van de speler beschrijft, bijvoorbeeld hoe de speler er uit ziet, welke vorm de speler heeft (zodat er &quot;gebotst&quot; kan worden met andere objecten in de spelwereld), etc.</p>
+<p>Elke scene heeft een &quot;root&quot; node waar alle andere eigenschappen aan &quot;bevestigd&quot; worden. Godot heeft heel veel verschillende &quot;nodes&quot; voor verschillende eigenschappen, maar degene die het beste past bij een speler is de <em>CharacterBody2D</em>. Dit &quot;node type&quot; heeft een aantal ingebouwde eigenschappen die het makkelijker maken om gedrag voor de speler te beschrijven.</p>
+<p>Om onze &quot;speler scene&quot; te maken voeren we de volgende stappen uit:</p>
+<ul>
+<li><p>Klik op <em>Other Node</em>,</p>
+<p><img src="../resources/godot-scene-tree-other-node.png" alt="Maak een nieuwe "node" voor de speler door op Other Node te klikken" /></p>
+</li>
+<li><p>Zoek naar <em>CharacterBody2D</em> in het <em>Create New Node</em> scherm dat verschijnt,</p>
+</li>
+<li><p>Klik op <em>Create</em>.</p>
+</li>
+<li><p>Het hoofdscherm van Godot zal van de 3D view naar de 2D view veranderen.</p>
+</li>
+<li><p>Klik met de rechter muisknop op <em>CharacterBody2D</em> en selecter <em>Rename</em>,</p>
+</li>
+<li><p>Verander de naam naar <em>Speler</em>.</p>
+</li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>De &quot;scene&quot; opslaan</h5>
+<p>Om ervoor te zorgen dat we geen werk verliezen is het zaak om ons werk vaak op te slaan.</p>
+<p>We zullen ons project organiseren met behulp van een map per &quot;scene&quot; en deze mappen bij elkaar te plaatsen in een &quot;scenes&quot; map.</p>
+        </div>
+    </div>
+</div>
+<ul>
+<li><p>Sla de scene op door op <kbd>Control</kbd>/<kbd>Cmd</kbd> + <kbd>s</kbd> te drukken of door op het menu <em>Scene</em> en vervolgens op <em>Save Scene</em> te klikken.</p>
+</li>
+<li><p>Maak een map <em>Scene</em> door op het knopje rechts bovenin te klikken</p>
+<p><img src="../resources/godot-save-scene.png" alt="Het "Save Scene" scherm" /></p>
+</li>
+<li><p>Maak een map <em>Speler</em>.</p>
+</li>
+<li><p>Klik op <em>Save</em>.</p>
+</li>
+</ul>
+<p>Als alles is goed gegaan zijn in het <em>Filesystem</em> scherm links onderin de mappen <em>Scenes</em> en <em>Speler</em> met daarin een bestand <em>speler.tscn</em> zichtbaar.</p>
+<p><figure class="content-center">
+    <img src="../resources/godot-speler-scene.png" alt="De &quot;scene tree&quot; met de Speler scene">
+    <figcaption class="caption">De &quot;scene tree&quot; met de <em>Speler</em> scene</figcaption>
+</figure>
+</p>
+<p>Godot waarschuwt ons, door middel van een waarschuwingsbord in de &quot;scene tree&quot;, dat onze speler een of meerdere eigenschappen mist. De eerste waarschuwing is dat de speler geen vorm heeft en dus niet kan botsen, &quot;collide&quot; in het Engels, met andere karakters, de omgeving, etc. Om dit te verhelpen kunnen we een &quot;collision shape&quot; toevoegen aan de speler.</p>
+<p>Klik op de <em>Speler</em> node in de &quot;scene tree&quot; met de rechter muisknop en selecteer <em>Add Child Node…</em>. Het <em>Create New Node</em> scherm verschijnt weer. Deze keer zoeken we naar <em>CollisionShape2D</em> en klikken op <em>Create</em>. Het waarschuwingsbord verplaatst zich nu naar deze nieuwe &quot;node&quot;.</p>
+<p><figure class="content-center">
+    <img src="../resources/godot-speler-no-collision-shape.png" alt="De speler zonder &quot;collision shape&quot;">
+    <figcaption class="caption">De speler zonder &quot;collision shape&quot;</figcaption>
+</figure>
+</p>
+<p>Met de <em>CollisionShape2D</em> geselecteerd aan de linkerkant van het scherm, kunnen we aan de rechterkant in de <em>Inspector</em> een &quot;vorm&quot; (of &quot;shape&quot; in het Engels) toekennen. Voor de speler kiezen we voor de <em>CapsuleShape2D</em>.</p>
+<p><figure class="content-center">
+    <img src="../resources/godot-new-collision-shape.png" alt="Een nieuwe &quot;collision shape&quot; kiezen">
+    <figcaption class="caption">Een nieuwe &quot;collision shape&quot; kiezen</figcaption>
+</figure>
+</p>
+<p>Nadat we de nieuwe vorm/shape gekozen hebben verschijnt deze in het midden van ons scherm. De groene capsule geeft de &quot;vorm&quot; van onze speler aan. Deze &quot;vorm&quot; kunnen we aanpassen met behulp van de rode cirkels. Maar de speler heeft nog geen uiterlijk en dus is het moeilijk om de juiste vorm te kiezen. Het kiezen van het uiterlijk van de speler wordt de volgende stap.</p>
+<p>Indien je nog niet eerder door het <em>Ninja Adventure - Asset Pack</em> hebt gekeken, is dit <em>het</em> moment om een uiterlijk voor de speler te zoeken. Ga naar de <em>Actors</em> / <em>Characters</em> map en bekijk de verschillende opties. De <em>SpriteSheet.png</em> bestanden bevatten alle plaatjes voor de animaties van de verschillende karakters.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Op den duur zullen we de meeste animaties gebruiken voor het gekozen karakter. Om de stappen eenvoudig te houden, kiezen we voor dit moment één &quot;sprite&quot; uit de <em>SeparateAnim</em> map.</p>
+        </div>
+    </div>
+</div>
+<p>Wanneer je je favoriete uiterlijk gevonden hebt, kies je een plaatje uit de <em>SeparateAnim</em> map, bijvoorbeeld <em>Item</em>, en sleep je deze naar het midden van het scherm. Het uiterlijk en de &quot;collision shape&quot; moeten in het midden uitgelijnd zijn.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>De &quot;sprite&quot; ziet er waarschijnlijk wat wazig uit. Voor het type spel wat we maken willen we dit niet. Om de sprite &quot;scherp&quot; te maken klik je op <em>Project</em>, <em>Project Settings</em> en dan <em>Textures</em> onder <em>Rendering</em>. Zet vervolgens <em>Default Texture Filter</em> op <em>Nearest</em> en klik op <em>Close</em>. De sprite is nu scherp.</p>
+        </div>
+    </div>
+</div>
+<p>Nu we een uiterlijk voor onze speler gekozen hebben, kunnen we de &quot;collision shape&quot; de juiste vorm geven door de rode cirkels te verslepen zodat we &quot;collission shape&quot; ongeveer achter de &quot;sprite&quot; verdwijnt.</p>
+<p><figure class="content-center">
+    <img src="../resources/godot-speler-single-frame.png" alt="Een eerste versie van de speler">
+    <figcaption class="caption">Een eerste versie van de speler</figcaption>
+</figure>
+</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>De stappen in dit proces zijn nagenoeg hetzelfde voor alle karakters, monsters, etc. die we zullen toevoegen aan het spel:</p>
+<ul>
+<li>Maak een nieuwe scene</li>
+<li>Kies de juiste &quot;root&quot; node</li>
+<li>Voeg een botsings/collisions vorm/shape toe.</li>
+<li>Kies het uiterlijk van het karaketer.</li>
+</ul>
+        </div>
+    </div>
+</div>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
-                                        <a href="../../tags/">
+                                        <a href="../../../tags/">
                                             <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
                                         </a>
-                                        <span class="mr-2"><a href="../../tags/scratch/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
-                                    <span>scratch</span>
+                                        <span class="mr-2"><a href="../../../tags/2d/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>2d</span>
                                 </a></span>
-                                        <span class="mr-2"><a href="../../tags/spel/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                        <span class="mr-2"><a href="../../../tags/godot/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>godot</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../../../tags/spel/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
                                     <span>spel</span>
                                 </a></span>
                                     </span>
@@ -269,16 +446,23 @@
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../activiteiten/a-maze-ing/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../activiteiten/action-adventure/voorbereiding/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Vorige</span>
-                                                <span class="block mt-1">A-​Maze-​ing</span>
+                                                <span class="block mt-1">Voorbereiding</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../activiteiten/card-battler/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Volgende</span>
+                                                <span class="block mt-1">Card Battler</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
                                     </div>
                                 </nav>
                             </footer>
@@ -319,6 +503,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Zombie Shooter", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "De Speler", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
