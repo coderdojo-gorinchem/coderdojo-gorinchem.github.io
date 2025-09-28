@@ -20,7 +20,7 @@ jobs:
         with:
           dotnet-version: "7.0.x"
 
-      - uses: "retypeapp/action-build@0f5c1e55453d13ec21ac8c441c9ebce6b2c4b0b0" # v3.7.0
+      - uses: "retypeapp/action-build@bc114d47567338d0bf3b368ca854abc701c3dc66" # v3.12.0-preview2
 
       - uses: "retypeapp/action-github-pages@5a952a4f53fc7366288db464ec120f755e9f1303" # v3.7.0
         with:
