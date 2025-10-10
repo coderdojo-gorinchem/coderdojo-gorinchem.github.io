@@ -9,26 +9,26 @@
     <meta name="generator" content="Retype 3.12.0-preview2">
 
     <!-- Primary Meta Tags -->
-    <title>De Speler</title>
-    <meta name="title" content="De Speler">
-    <meta name="description" content="Misschien wel het allerbelangrijkste aan ieder spel is het karakter van de speler.">
+    <title>De Wereld</title>
+    <meta name="title" content="De Wereld">
+    <meta name="description" content="Nu we een speler hebben die door een grijze \"void\" kan bewegen is het tijd om de wereld wat meer kleur te geven.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://coderdojo-gorinchem.nl/activiteiten/action-adventure/de-speler/">
+    <link rel="canonical" href="https://coderdojo-gorinchem.nl/activiteiten/action-adventure/de-wereld/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://coderdojo-gorinchem.nl/activiteiten/action-adventure/de-speler/">
-    <meta property="og:title" content="De Speler">
-    <meta property="og:description" content="Misschien wel het allerbelangrijkste aan ieder spel is het karakter van de speler.">
-    <meta property="og:image" content="https://coderdojo-gorinchem.nl/activiteiten/action-adventure/resources/godot-scene-tree-empty.png">
+    <meta property="og:url" content="https://coderdojo-gorinchem.nl/activiteiten/action-adventure/de-wereld/">
+    <meta property="og:title" content="De Wereld">
+    <meta property="og:description" content="Nu we een speler hebben die door een grijze \"void\" kan bewegen is het tijd om de wereld wat meer kleur te geven.">
+    <meta property="og:image" content="https://coderdojo-gorinchem.nl/activiteiten/action-adventure/resources/basic-terrain.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://coderdojo-gorinchem.nl/activiteiten/action-adventure/de-speler/">
-    <meta property="twitter:title" content="De Speler">
-    <meta property="twitter:description" content="Misschien wel het allerbelangrijkste aan ieder spel is het karakter van de speler.">
-    <meta property="twitter:image" content="https://coderdojo-gorinchem.nl/activiteiten/action-adventure/resources/godot-scene-tree-empty.png">
+    <meta property="twitter:url" content="https://coderdojo-gorinchem.nl/activiteiten/action-adventure/de-wereld/">
+    <meta property="twitter:title" content="De Wereld">
+    <meta property="twitter:description" content="Nu we een speler hebben die door een grijze \"void\" kan bewegen is het tijd om de wereld wat meer kleur te geven.">
+    <meta property="twitter:image" content="https://coderdojo-gorinchem.nl/activiteiten/action-adventure/resources/basic-terrain.png">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
@@ -198,10 +198,10 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="retype-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="de-speler" class="break-words">
+<doc-anchor-target id="de-wereld" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#de-speler">#</doc-anchor-trigger>
-        <span>De Speler</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#de-wereld">#</doc-anchor-trigger>
+        <span>De Wereld</span>
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center print:justify-center">
@@ -209,36 +209,50 @@
     <div><a href="../../../categories/activiteiten/">Activiteiten</a></div>
 </div>
 
-<p>Misschien wel het allerbelangrijkste aan ieder spel is het karakter van de speler. Dit is dan ook het eerste aspect van het spel waar we aan gaan werken. Voordat we gaan beginnen, maken we nogmaals een kleine tussenstop voor een korte uitleg.</p>
-<doc-anchor-target id="scenes-en-nodes">
+<p>Nu we een speler hebben die door een grijze &quot;void&quot; kan bewegen is het tijd om de wereld wat meer kleur te geven. Hiervoor gaan we gebruik maken van &quot;tegels&quot; waarmee we de wereld kunnen tekenen. Het &quot;asset pack&quot; wat we hebben gedownload heeft een aantal &quot;tilesets&quot; (verzamelingen van dit soort &quot;tegels&quot; voor verschillende typen gebieden) die we kunnen gebruiken. Deze kun je vinden in de <em>Backgrounds/Tilesets</em> map.</p>
+<p>In eerste instantie zullen we ons vooral bezig houden met het tekenen van de grond &quot;buiten&quot; in de bovenwereld. Hiervoor gaan we de <em>TilesetFloor</em> tileset gebruiken. Deze tileset geeft ons acht verschillende soorten &quot;grond&quot; waar we de wereld vorm mee kunnen geven.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Om eenvoudiger de bestanden in het asset pack te kunnen bekijken, kun je deze het beste openen in de &quot;verkenner&quot;. Om deze te openen, klik je met de rechter muisknop in het <em>FileSystem</em> gebied en kies je voor <em>Open in File Manager</em>.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="gras">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#scenes-en-nodes">#</doc-anchor-trigger>
-        <span><em>Scenes</em> en <em>Nodes</em></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#gras">#</doc-anchor-trigger>
+        <span>Gras</span>
     </h2>
 </doc-anchor-target>
-<p>Linksbovenin in de interface van Godot zien we de &quot;scene tree&quot;.</p>
-<p><figure class="content-center">
-    <img src="../resources/godot-scene-tree-empty.png" alt="De lege &quot;scene tree&quot;" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">De lege &quot;scene tree&quot;</figcaption>
-</figure>
-</p>
-<p>De &quot;scene tree&quot; geeft een overzicht van de verschillende &quot;nodes&quot; in de actieve &quot;scene&quot;. Maar wat <em>zijn</em> scenes en nodes?</p>
 <ul>
-<li>Nodes zijn de basisbouwblokken in Godot. Nodes worden gebruikt om eigenschappen van &quot;dingen&quot; in de spelwereld te beschrijven. Bijvoorbeeld:
-<ul>
-<li>Hoe de speler er uit ziet.</li>
-<li>Wat voor geluid de speler maakt tijdens het lopen.</li>
-<li>Welke karakters en monsters er rond lopen in een gebied.</li>
-<li>Welke achtergrond muziek er speelt, etc.</li>
+<li>Open de &quot;boven wereld&quot;.</li>
+<li>Maak een nieuwe node en kies de <em>TileMapLayer</em>.</li>
+<li>Verander de naam van de <em>TileMapLayer</em> naar <em>Gras</em>.</li>
+<li>Klik in de <em>Inspector</em> op <em><empty></em> naast <em>Tile Set</em>.</li>
+<li>Kies voor <em>TileSet</em> onder <em>New</em>.</li>
+<li>Klik op <em>TileSet</em> om de eigenschappen te openen.</li>
+<li>Zorg er voor dat onder <em>Tile Size</em> beide waardes op 16px staan.</li>
+<li>Klik onderaan in het midden van het scherm op <em>TileSet</em>.</li>
+<li>Zoek het <em>Backgrounds/Tilesets/TilesetFloor.png</em> bestand in het <em>FileSystem</em> gebied.</li>
+<li>Sleep het <em>TilesetFloor</em> bestand naar het lege vlak onder <em>Tile Sources</em>.</li>
+<li>Er wordt gevraagd of de fileset automatisch in tiles moet worden opgesplitst. Antwoord hierop <em>Yes</em>.</li>
 </ul>
-</li>
-<li>Scenes zijn groepen van nodes. Deze groepen kunnen eventueel worden hergebruikt. Bijvoorbeeld:
+<p>We kunnen nu beginnen met tekenenen</p>
 <ul>
-<li>De speler</li>
-<li>Een vijand</li>
-<li>Een level</li>
-</ul>
-</li>
+<li>Kies onderin het scherm voor <em>TileMap</em></li>
+<li>Zorg ervoor dat het potlood geselecteerd is in de menubalk boven de weergave van de tilemap (en dat de muisaanwijzer geselecteeerd is in de bovenste menubalk)</li>
+<li>Kies een &quot;tegel&quot; in de tilemap en begin te tekenen door de linker muisknop in te drukken en de muis over de weergave van de wereld te bewegen.</li>
+<li>Je kunt &quot;tegels&quot; weer verwijderen door er met de rechter muisknop op de klikken.</li>
 </ul>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
@@ -253,29 +267,86 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Dit klinkt waarschijnlijk op dit moment nog een beetje abstract, maar zodra we scenes en nodes gaan bouwen en gebruiken wordt alles snel duidelijk!</p>
+<p>Experimenteer wat met tekenen, maar stop er niet te veel werk in. Aangezien dit
+niet de meest efficiënte manier van het tekenen van terrein is zullen we de
+experimenten meteen weer ongedaan maken en een aantal makkelijkere manieren
+introduceren om terrein te tekenen.</p>
         </div>
     </div>
 </div>
-<p>Aangezien we een 2D spel aan het maken zijn, zullen we vooral gebruik maken van 2D &quot;nodes&quot;.</p>
-<doc-anchor-target id="het-uiterlijk-van-de-speler">
+<p>Je zult misschien zien dat je over de speler heen kunt tekenen. Dat is natuurlijk niet de bedoeling. Gelukkig is dit eenvoudig op te lossen.</p>
+<ul>
+<li>In de &quot;scene tree&quot; staat de <em>Speler</em> in dit geval &quot;boven&quot; de <em>Gras</em> node.</li>
+<li>Sleep de <em>Gras</em> node omhoog naar boven de <em>Speler</em>.</li>
+<li>De speler is nu weer zichtbaar.</li>
+</ul>
+<p>We zullen nu wat meer gras tekenen waarbij we de editor automatisch willekeurig stukjes gras laten kiezen.</p>
+<ul>
+<li>Selecteer de grastegels die je wilt plaatsen door deze te selecteren, bijvoorbeeld door de linker muisknop ingedrukt te houden en over de verschillende tegels heen te bewegen, of door <em>shift</em> ingedrukt te houden en de tegels die je wilt aan te klikken.</li>
+<li>Klik op de dobbelsteen in de menubalk boven de <em>TileMap</em>.</li>
+<li>Door de linker muisknop ingedrukt te houden in de weergave van de wereld en de muis rond te bewegen kun je nu willekeurig gras tekenen.</li>
+<li>In de menubalk staan ook een <em>lijn</em> en <em>rechthoek</em> tool om sneller grotere vlakken te tekenen.</li>
+<li>Je kunt ook de randen van een gebied tekenen en dan met de verfemmer de binnenkant invullen.</li>
+</ul>
+<p>Afhankelijk van de gekozen grastegels kan het zijn dat het gras er wat &quot;wild&quot; uitziet.</p>
+<p>We kunnen de editor vertellen om sommige grastegels vaker te gebruiken dan anderen wanneer het willekeurig tegels plaatst. Hiervoor volgen we de volgende stappen</p>
+<ul>
+<li>Klik onderin het scherm op <em>TileSet</em>.</li>
+<li>Klik op <em>Select</em>.</li>
+<li>Klik op de grastegel die we vaker of minder vaak willen voor laten komen.</li>
+<li>Er verschijnen in de middelste kolom een aantal eigenschappen voor deze tegel.</li>
+<li>Klik op <em>Miscellaneous</em>.</li>
+<li>Verander de probability naar een hoger getal, bijvoorbeeld 6, als je wilt dat de tegel relatief vaker gebruikt wordt, of naar een getal tussen 0 en 1, bijvoorbeeld 0.25, als je wilt dat de tegel relatief minder vaak gebruikt wordt.</li>
+<li>Klik weer op <em>TileMap</em> en ga verder met tekenen.</li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Als je grote vlakken in één keer tekent en je vindt ze er niet helemaal uitzien zoals je wilt, kun je er gewoon overheen blijven tekenen om het gras er anders uit te laten zien.</p>
+        </div>
+    </div>
+</div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Als je nu het spel start en speelt, zul je zien dat het mogelijk is om buiten het scherm te lopen. In dit geval willen we juist dat de camera de speler volgt.</p>
+<p>Dit is eenvoudig op te lossen door de <em>Camera2D</em> node in de &quot;scene tree&quot; binnen de <em>Speler</em> node te slepen. Doe dit door de <em>Camera2D</em> node te verslepen en bovenop de <em>Speler</em> node los te laten.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="wegen">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#het-uiterlijk-van-de-speler">#</doc-anchor-trigger>
-        <span>Het uiterlijk van de speler</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#wegen">#</doc-anchor-trigger>
+        <span>Wegen</span>
     </h2>
 </doc-anchor-target>
-<p>Zoals eerder genoemd kan de speler worden beschreven met behulp van een &quot;scene&quot; welke alle eigenschappen van de speler beschrijft, bijvoorbeeld hoe de speler er uit ziet, welke vorm de speler heeft (zodat er &quot;gebotst&quot; kan worden met andere objecten in de spelwereld), etc.</p>
-<p>Elke scene heeft een &quot;root&quot; node waar alle andere eigenschappen aan &quot;bevestigd&quot; worden. Godot heeft heel veel verschillende &quot;nodes&quot; voor verschillende eigenschappen, maar degene die het beste past bij een speler is de <em>CharacterBody2D</em>. Dit &quot;node type&quot; heeft een aantal ingebouwde eigenschappen die het makkelijker maken om gedrag voor de speler te beschrijven.</p>
-<p>Om onze &quot;speler scene&quot; te maken voeren we de volgende stappen uit:</p>
+<p>Hoewel gras natuurlijk heel leuk is, is het ook wel fijn om wat wegen te hebben, zodat we weten waar de speler zoal heen zou kunnen lopen. De wegen zullen we op een nieuwe &quot;laag&quot; in de bovenwereld tekenen.</p>
 <ul>
-<li><p>Klik op <em>Other Node</em>,</p>
-<p><img src="../resources/godot-scene-tree-other-node.png" alt="Maak een nieuwe &quot;node&quot; voor de speler door op Other Node te klikken" /></p>
-</li>
-<li>Zoek naar <em>CharacterBody2D</em> in het <em>Create New Node</em> scherm dat verschijnt,</li>
-<li>Klik op <em>Create</em>.</li>
-<li>Het hoofdscherm van Godot zal van de 3D view naar de 2D view veranderen.</li>
-<li>Klik met de rechter muisknop op <em>CharacterBody2D</em> en selecter <em>Rename</em>,</li>
-<li>Verander de naam naar <em>Speler</em>.</li>
+<li>Om niet dezelfde setup te hoeven doen als voor het gras, klikken we met de rechter muisknop op de <em>Gras</em> node en klikken op <em>Duplicate</em>. Of selecteer de <em>Gras</em> node en druk op het toetsenbord op <kbd>Control</kbd>+<kbd>D</kbd>.</li>
+<li>Verander de naam van de node van <em>Gras2</em> naar <em>Wegen</em>.</li>
+<li>Selecteer de &quot;gum&quot; in de menubalk in het midden van het scherm en wis al het gras op deze laag. Bijvoorbeeld door een groot vierkant te tekenen. In plaats van de &quot;gum&quot;, kun je het vierkant ook tekenenen door de rechter muisknop ingedrukt te houden.</li>
+<li>Zet de &quot;gum&quot; en de &quot;dobbelsteen&quot; uit.</li>
+<li>Kies een stuk weg uit de <em>TileMap</em> en tekenen een paar kleine wegen.</li>
 </ul>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
@@ -290,101 +361,251 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-            <h5>De &quot;scene&quot; opslaan</h5>
-<p>Om ervoor te zorgen dat we geen werk verliezen is het zaak om ons werk vaak op te slaan.</p>
-<p>We zullen ons project organiseren met behulp van een map per &quot;scene&quot; en deze mappen bij elkaar te plaatsen in een &quot;scenes&quot; map.</p>
+<p>Experimenteer een beetje met het tekenen van de wegen, maar teken er niet te veel! Net als bij het gras zullen we direct een makkelijkere techniek leren om snel beter uitziende wegen te tekenen.</p>
         </div>
     </div>
 </div>
+<p>Het zal vast opvallen dat de wegen die we tekenen er nogal hoekig uitzien. Maar het zal misschien ook opgevallen zijn dat er ook &quot;randen&quot; voor de wegen in de <em>TileMap</em> zijn die de wegen er beter uit kunnen laten zien. Voor elke hoek in de weg de juiste tegel zoeken kost erg veel tijd. Gelukkig heeft de editor ook hier een truc om automatisch de juiste tegels te kiezen. Hiervoor moeten we wel wat voorbereidend werk doen door &quot;terreinen&quot; te definiëren.</p>
 <ul>
-<li>Sla de scene op door op <kbd>Control</kbd>/<kbd>Cmd</kbd> + <kbd>s</kbd> te drukken of door op het menu <em>Scene</em> en vervolgens op <em>Save Scene</em> te klikken.</li>
-<li><p>Maak een map <em>Scene</em> door op het knopje rechts bovenin te klikken</p>
-<p><img src="../resources/godot-save-scene.png" alt="Het &quot;Save Scene&quot; scherm" /></p>
-</li>
-<li>Maak een map <em>Speler</em>.</li>
-<li>Klik op <em>Save</em>.</li>
+<li>Zorg dat de <em>Wegen</em> node geselecteerd is in de &quot;scene tree&quot;.</li>
+<li>Klik aan de rechterkant van het scherm in de <em>Inspector</em> op <em>TileSet</em>.</li>
+<li>Vouw het <em>Terrain Sets</em> menu open en klik op <em>Add element</em>.</li>
+<li>Selecteer <em>Match Sides</em> bij de <em>Mode</em> optie. De optie die we hier selecteren bepaalt hoe goed de editor automatisch de juiste tegel zal kiezen, maar de betere opties (<em>Match Corners and Sides</em>) vereisen ook meer werk van tevoren.</li>
+<li>Open <em>Terrains</em> en klik op <em>Add element</em>.</li>
+<li>Verander de <em>Name</em> naar &quot;Bos&quot; of een andere naam die beter past bij de type grond of gras die je hebt gekozen.</li>
+<li>Kies bij <em>Color</em> voor een kleur die <em>niet</em> lijkt op de kleur van de wegen. Dit lijkt misschien een beetje vreemd, maar we zullen snel zien waarom dit handig is.</li>
 </ul>
-<p>Als alles is goed gegaan zijn in het <em>Filesystem</em> scherm links onderin de mappen <em>Scenes</em> en <em>Speler</em> met daarin een bestand <em>speler.tscn</em> zichtbaar.</p>
-<p><figure class="content-center">
-    <img src="../resources/godot-speler-scene.png" alt="De &quot;scene tree&quot; met de Speler scene" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">De &quot;scene tree&quot; met de Speler scene</figcaption>
-</figure>
-</p>
-<p>Godot waarschuwt ons, door middel van een waarschuwingsbord in de &quot;scene tree&quot;, dat onze speler een of meerdere eigenschappen mist. De eerste waarschuwing is dat de speler geen vorm heeft en dus niet kan botsen, &quot;collide&quot; in het Engels, met andere karakters, de omgeving, etc. Om dit te verhelpen kunnen we een &quot;collision shape&quot; toevoegen aan de speler.</p>
-<p>Klik op de <em>Speler</em> node in de &quot;scene tree&quot; met de rechter muisknop en selecteer <em>Add Child Node…</em>. Het <em>Create New Node</em> scherm verschijnt weer. Deze keer zoeken we naar <em>CollisionShape2D</em> en klikken op <em>Create</em>. Het waarschuwingsbord verplaatst zich nu naar deze nieuwe &quot;node&quot;.</p>
-<p><figure class="content-center">
-    <img src="../resources/godot-speler-no-collision-shape.png" alt="De speler zonder &quot;collision shape&quot;" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">De speler zonder &quot;collision shape&quot;</figcaption>
-</figure>
-</p>
-<p>Met de <em>CollisionShape2D</em> geselecteerd aan de linkerkant van het scherm, kunnen we aan de rechterkant in de <em>Inspector</em> een &quot;vorm&quot; (of &quot;shape&quot; in het Engels) toekennen. Voor de speler kiezen we voor de <em>CapsuleShape2D</em>.</p>
-<p><figure class="content-center">
-    <img src="../resources/godot-new-collision-shape.png" alt="Een nieuwe &quot;collision shape&quot; kiezen" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">Een nieuwe &quot;collision shape&quot; kiezen</figcaption>
-</figure>
-</p>
-<p>Nadat we de nieuwe vorm/shape gekozen hebben verschijnt deze in het midden van ons scherm. De groene capsule geeft de &quot;vorm&quot; van onze speler aan. Deze &quot;vorm&quot; kunnen we aanpassen met behulp van de rode cirkels. Maar de speler heeft nog geen uiterlijk en dus is het moeilijk om de juiste vorm te kiezen. Het kiezen van het uiterlijk van de speler wordt de volgende stap.</p>
-<p>Indien je nog niet eerder door het <em>Ninja Adventure - Asset Pack</em> hebt gekeken, is dit <em>het</em> moment om een uiterlijk voor de speler te zoeken. Ga naar de <em>Actors</em> / <em>Characters</em> map en bekijk de verschillende opties. De <em>SpriteSheet.png</em> bestanden bevatten alle plaatjes voor de animaties van de verschillende karakters.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Op den duur zullen we de meeste animaties gebruiken voor het gekozen karakter. Om de stappen eenvoudig te houden, kiezen we voor dit moment één &quot;sprite&quot; uit de <em>SeparateAnim</em> map.</p>
-        </div>
-    </div>
-</div>
-<p>Wanneer je je favoriete uiterlijk gevonden hebt, kies je een plaatje uit de <em>SeparateAnim</em> map, bijvoorbeeld <em>Item</em>, en sleep je deze naar het midden van het scherm. Het uiterlijk en de &quot;collision shape&quot; moeten in het midden uitgelijnd zijn.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>De &quot;sprite&quot; ziet er waarschijnlijk wat wazig uit. Voor het type spel wat we maken willen we dit niet. Om de sprite &quot;scherp&quot; te maken klik je op <em>Project</em>, <em>Project Settings</em> en dan <em>Textures</em> onder <em>Rendering</em>. Zet vervolgens <em>Default Texture Filter</em> op <em>Nearest</em> en klik op <em>Close</em>. De sprite is nu scherp.</p>
-        </div>
-    </div>
-</div>
-<p>Nu we een uiterlijk voor onze speler gekozen hebben, kunnen we de &quot;collision shape&quot; de juiste vorm geven door de rode cirkels te verslepen zodat we &quot;collission shape&quot; ongeveer achter de &quot;sprite&quot; verdwijnt.</p>
-<p><figure class="content-center">
-    <img src="../resources/godot-speler-single-frame.png" alt="Een eerste versie van de speler" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">Een eerste versie van de speler</figcaption>
-</figure>
-</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>De stappen in dit proces zijn nagenoeg hetzelfde voor alle karakters, monsters, etc. die we zullen toevoegen aan het spel:</p>
+<p>Nu kunnen we exta informatie toevoegen aan de tegels in onze <em>TileSet</em>, zodat de editor ze automatisch kan plaatsen wanneer we wegen tekenen.</p>
 <ul>
-<li>Maak een nieuwe scene</li>
-<li>Kies de juiste &quot;root&quot; node</li>
-<li>Voeg een botsings/collisions vorm/shape toe.</li>
-<li>Kies het uiterlijk van het karaketer.</li>
+<li>Klik onderin het scherm op <em>TileSet</em>.</li>
+<li>Klik op <em>Paint</em>.</li>
+<li>Klik op <em>Select a Property Editor</em> en klik op <em>Terrains</em>.</li>
+<li>Selecteer <em>Terrain Set 0</em> bij <em>Terrain Set</em>.</li>
+<li>Selecteer <em>Bos</em> (of de andere naam die je het terrein hebt gegeven) bij <em>Terrain</em>.</li>
+<li>Selecteer de tegels die je voor je wegen wilt gebruiken in in het overzicht van de tileset. De geselecteerde tegels worden lichter van kleur.</li>
+<li>Klik ook in het midden van elke tegel om aan te geven dat de tegel gebruikt moet worden voor de weg. Hier komt de eerder geselecteerde kleur van pas en is duidelijk waarom het het beste een andere kleur kan zijn dan het terrein, aangezien het dan beter zichtbaar is.</li>
+</ul>
+<p>Nu komt het lastigste gedeelte. We moeten van elke tegel aangeven wanneer deze precies gebruikt moet worden tijdens het tekenen. Dit doen we door de kanten van de tegel in te kleuren waar andere tegels van de weg getekend worden. Dus bijvoorveeld als we naar de tegel rechts onderin kijken, dan willen we dat die tegel getekend wordt als er ook weg is links van en boven de tegel. We kleuren dan ook de linkerkant en de bovenkant van de tegel in.</p>
+<p>Als het goed is gegaan ziet het terrein er als volgt uit</p>
+<p><figure class="content-center">
+    <img src="../resources/basic-terrain.png" alt="Een eenvoudig &quot;terrein&quot;" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Een eenvoudig &quot;terrein&quot;</figcaption>
+</figure>
+</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Als je een foutje maakt tijdens het inkleuren van de tegels kun je, ook hier, de kleur weer weghalen door met de rechter muisknop te klikken.</p>
+        </div>
+    </div>
+</div>
+<p>We kunnen nu wegen tekenen met dit terrein.</p>
+<ul>
+<li>Ga naar <em>TileMap</em> onderin het scherm.</li>
+<li>Klik in de middelste menubalk op <em>Terrains</em></li>
+<li>Selecteer het <em>Bos</em> terrein.</li>
+<li>Teken een aantal vierkante &quot;wegen&quot;.</li>
+</ul>
+<p>De vierkante blokken &quot;weg&quot; zullen er al best goed uitzien. Mocht je toevallig een paar vierkanten getekend hebben die elkaar raken, zal het misschien opvallen dat sommige hoeken niet helemaal kloppen.</p>
+<p><figure class="content-center">
+    <img src="../resources/simple-terrain-edges.png" alt="Scherpe hoeken in het eenvoudige &quot;terrein&quot;" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Scherpe hoeken in het eenvoudige &quot;terrein&quot;</figcaption>
+</figure>
+</p>
+<p>Dit komt doordat ons terrein alleen maar tegels heeft voor grote hoeken en langere rechte stukken. Voor dit soort kleinere details zullen we een gedetaileerder terrein moeten maken. Als je bijvoorveeld probeert een rechte lijn te tekenen, zul je zien dat dit ook niet goed werkt.</p>
+<p>Gelukkig kan dit beetje voor beetje opgelost worden door steeds meer detail aan het terrein toe te voegen. Voor de dunnere rechte wegen kunnen we de tegels toevoegen die direct naast en onder de voorgaande tegels liggen. Ook deze tegels markeren door aan te geven aan welke kanten van de tegel er stukken weg moeten zijn voordat de tegel gekozen wordt om getekend te worden.</p>
+<p><figure class="content-center">
+    <img src="../resources/simple-terrain-thin-paths.png" alt="Simpel terrein met smalle wegen" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Simpel terrein met smalle wegen</figcaption>
+</figure>
+</p>
+<p>Hoewel dit er al een stuk beter uitziet, zijn er nog steeds kleine foutjes zichtbaar als wegen op een bepaalde manier bij elkaar komen.</p>
+<p><figure class="content-center">
+    <img src="../resources/simple-terrain-small-detail-errors.png" alt="Simpel terrein met kleine fouten in de details van wegen" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Simpel terrein met kleine fouten in de details van wegen</figcaption>
+</figure>
+</p>
+<p>Ook dit is weer op te lossen door meer tegels en informatie toe te voegen aan het terrein. In dit geval zullen we niet alleen moeten aangeven aan welke kanten van een tegel aangrenzende tegels zijn, maar ook aan de hoeken.</p>
+<p>Als eerste stap moeten we de &quot;mode&quot; van onze &quot;terrain set&quot; aanpassen naar <em>Match Corners and Sides</em>.</p>
+<ul>
+<li>Zorg dat de <em>Wegen</em> node geselecteerd is in de &quot;scene tree&quot;.</li>
+<li>Ga in de <em>Inspector</em>, aan de rechterkant van het scherm, naar <em>Terrain Sets</em> en verander de <em>Mode</em> van de terrain set naar <em>Match Corners and Sides</em>.</li>
+<li>Klik onderin het scherm weer op <em>TileSet</em>.</li>
+</ul>
+<p>Het zal misschien opvallen dat de geselecteerde kanten veranderd zijn naar kleine vierkantjes. Dit komt omdat we nu ook moeten aangeven aan welke hoeken van de tegels andere tegels grenzen. Om op hetzelfde niveau te komen als toen <em>Match Sides</em> de <em>mode</em> was, moeten we de binnenste vierkanten van de al ingekleurde tegels nu ook zelf inkleuren.</p>
+<p>Ook kunnen we nu de andere tegels toevoegen die we nodig hebben om gedetailleerde wegen te tekenen. Dit ziet er misschien wat uitdagend uit, maar er is een relatief eenvoudige truc om te kiezen welke stukken van de tegels ingekleurd moeten worden. De stukken die &quot;aarde&quot; laten zien moeten ingekleurd worden en de stukken die &quot;gras&quot; voorstellen willen we niet inkleuren. Dit is een nauwkeurig werk, dus neem je tijd. Als je klaar bent moet de tileset er als volgt uitzien.</p>
+<p><figure class="content-center">
+    <img src="../resources/detailed-terrain-definition.png" alt="Gedetaileerd terrein" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Gedetaileerd terrein</figcaption>
+</figure>
+</p>
+<p>We kunnen nu proberen meer gedetailleerde wegen te tekenen en deze zouden nu allemaal goed aan moeten sluiten.</p>
+<ul>
+<li>Klik onderin het scherm op <em>TileMap</em>.</li>
+<li>Klik op <em>Terrains</em>.</li>
+<li>Selecteer het <em>Bos</em>.</li>
+<li>Teken een ingewikkeldere weg en kijk of er nog foutjes zichtbaar zijn.</li>
+</ul>
+<p><figure class="content-center">
+    <img src="../resources/detailed-terrain-example.png" alt="Een voorbeeld van gedetaileerd terrein" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Een voorbeeld van gedetaileerd terrein</figcaption>
+</figure>
+</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Je kunt nu de ruwe wegen die je eerder getekend hebt overtrekken met het nieuwe terrein om de wegen er beter uit te laten zien.</p>
+<p>Aangezien dit niet altijd even goed werkt, is het vaak eenvoudiger om alle wegen uit te gummen en overnieuw te beginnen.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="bomen-rotsen-en-andere-obstakels">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bomen-rotsen-en-andere-obstakels">#</doc-anchor-trigger>
+        <span>Bomen, rotsen en andere obstakels</span>
+    </h2>
+</doc-anchor-target>
+<p>De wereld begint inmiddels redelijk vorm te krijgen met gras en wegen waarover onze speler kan lopen. Maar de wereld is wel een beetje plat. Om dit te verhelpen kunnen we dingen toevoegen als bomen, rotsen, etc. waar de speler omheen moet lopen. Hiervoor zullen we dezelfde technieken gebruiken als we gebruikt hebben voor de <em>Gras</em> en <em>Wegen</em> lagen.</p>
+<ul>
+<li>Klik met de rechter muisknop in de &quot;scene tree&quot;.</li>
+<li>Klik op &quot;Add Child Node…&quot;</li>
+<li>Selecteer de <em>TileMapLayer</em>.</li>
+<li>Verander de naam van de nieuwe <em>TileMapLayer</em> naar &quot;Obstakels&quot;.</li>
+<li>Zorg ervoor dat de <em>Obstakels</em> node <em>boven</em> de <em>Speler</em> node staat in de &quot;scene tree&quot;.</li>
+</ul>
+<p>Voor de volgende stap moeten we een nieuwe &quot;tilemap&quot; definiëren waarmee we de obstakels kunnen tekenen. We gaan hiervoor de &quot;TilesetNature&quot; tileset gebruiken. Deze tileset kun je, net als de vorige tileset, vinden in de <em>Backgrounds/Tileset</em> map. Deze tileset bevat sprites voor (groepen van) bomen, rotsen, etc.</p>
+<ul>
+<li>Klik in de <em>Inspector</em> naast <em>Tile Set</em> op <em><empty></em>.</li>
+<li>Selecteer <em>TileSet</em>.</li>
+<li>Klik onderin het scherm op <em>TileSet</em>.</li>
+<li>Navigeer in het <em>FileSystem</em> gebied naar de <em>Backgrounds/Tilesets</em> map in de asset pack.</li>
+<li>Sleep de &quot;TilesetNature.png&quot; vanuit het <em>FileSystem</em> gebied naar het gebied on de <em>Tile Sources</em> map.</li>
+<li>Kies deze keer <em>No</em> wanneer de editor vraagt of er automatisch tegels gemaakt moeten worden. Dit is nodig aangezien niet alle tegels even groot zijn. We zullen zelf moeten aangeven hoe groot elke tegel is.</li>
+</ul>
+<p>Om te beginnen gaan we verder met het voorbereiden van één boom om onze wereld verder mee in te vullen. Het proces om andere objecten vanuit deze tileset toe te voegen is hetzelfde waarna de andere objecten beschikbaar zijn om mee te tekenen.</p>
+<ul>
+<li>Selecteer het <em>Setup</em> menu uit de middelste</li>
+<li>Kies een type boom die je wilt toevoegen aan de wereld en selecteer een van de tegels waar de boom uit bestaat.</li>
+<li>Selecteer het <em>Select</em> menu uit de middelste menubalk.</li>
+<li>Selecteer de eerder gekozen tegel en gebruik de rondje bolletjes die verschijnen om het vak net zo groot te maken als de boom.</li>
+</ul>
+<p>De boom kan nu gebruikt worden om mee te tekenen.</p>
+<ul>
+<li>Selecteer onderin het scherm <em>TileMap</em>.</li>
+<li>Selecteer de zojuist bewerkte boom.</li>
+<li>Teken de boom in je wereld.</li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Wanneer je meerdere bomen en obstakels maakt, kun je ook nu weer meerdere objecten tegelijk selecteren om te tekenen en met behulp van de dobbelsteen de editor willekeurig obstakels laten plaatsen.</p>
+        </div>
+    </div>
+</div>
+<p>Als je nu het spel start, zul je zien dat de speler gewoon door de boom heen kan lopen en dat de speler altijd bovenop de boom zichtbaar is. Dat is natuurlijk niet hoe de echte wereld werkt. Dus laten we daar wat aan doen.</p>
+<p>&quot;Y-sorting&quot; is functionaliteit in de editor die er voor zorgt dat verschillende objecten, zoals bomen en de speler, achter elkaar langs kunnen bewegen. Dit is eenvoudig aan te zetten.</p>
+<ul>
+<li>Selecteer de <em>Obstakels</em> node in de &quot;scene editor&quot;.</li>
+<li>Vouw in de <em>Inspector</em> het <em>Ordering</em> menu open en zet een vinkje bij <em>Y Sort Enabled</em>.</li>
+<li>Sleep de <em>Speler</em> bovenop de <em>Obstakels</em>.</li>
+</ul>
+<p>De <em>Speler</em> node is nu &quot;genest&quot; in de <em>Obstakels</em> laag en als je nu het spel start zul je zien dat wanneer je naar een boom toe loopt dat de speler halverwege achter de boom verdwijnt. Wanneer de speler precies achter een obstakel moet verdwijnen hangt van het obstakel af. Bij de meeste bomen zal het opvallen dat de speler misschien later achter de boom verdwijnt dan je zou verwachten. Dit kan worden opgelost door de &quot;Texture Origin&quot; van de obstakels aan te passen. Dit kan met de volgende stappen.</p>
+<ul>
+<li>Klik onderin het scherm op <em>TileSet</em>.</li>
+<li>Klik in de middelste menubalk op <em>Select</em>.</li>
+<li>Selecteer de boom/het obstakel om aan te passen.</li>
+<li>Vouw het <em>Rendering</em> menu open.</li>
+<li>Pas de <em>y</em> waarde by <em>Texture Origin</em> aan, zodat de speler eerder of later achter het obstakel verdwijnt. Hogere getallen zorgen ervoor dat de speler later achter het obstakel verdwijnt als de speler er op af loopt vanaf de onderkant, lagere (en negatieve waardes) zorgen ervoor dat dit eerder gebeurt.</li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Het aanpassen van deze waardes kan een tijdrovend werkje zijn, aangezien het vaak herstarten van het spel vereist. Goede waardes kunnen er wel voor zorgen dat je spel er beter uitziet.</p>
+        </div>
+    </div>
+</div>
+<p>Maar de speler kan nog steeds door de boom heen lopen… Om dit te voorkomen, moeten we aan elk obstakel een &quot;collission&quot;/&quot;botsing&quot; shape toevoegen, net zoals we dat voor de speler hebben gedaan.</p>
+<ul>
+<li>Klik in de <em>Inspector</em> op <em>Physics Layers</em>.</li>
+<li>Klik op <em>Add Element</em>.</li>
+<li><p>De <em>Inspector</em> zou er dan als volgt uit moeten zien.</p>
+<p><img src="../resources/tileset-physics-layer.png" alt="Een &quot;physics layer&quot; toegevoegd aan de tileset" /></p>
+</li>
+</ul>
+<p>Nu kunnen we voor elk obstakel een &quot;collision shape&quot; toevoegen.</p>
+<ul>
+<li>Klik onderin het scherm op <em>TileSet</em>.</li>
+<li>Klik in de middelste menubalk op <em>Select</em>.</li>
+<li>Selecteer het obstakel waar je een &quot;collision shape&quot; aan toe wilt voegen, bijvoorveeld een boom.</li>
+<li>Open in de middelste kolom het <em>Physics</em> en dan <em>Physics Layer 0</em> menu.</li>
+<li>Klik op de knop met de magneet (<em>Toggle Grid Snap</em>) en selecteer <em>Grid Snap</em>. Dit maakt het makkelijker om de &quot;collision shape&quot; te tekenen.</li>
+<li>Klik op de knop met de vier naar buiten wijzende pijltjes om de collision shape editor groter te maken.</li>
+<li>Klik op de knop met groene plus en klik op een aantal kruizingen in het raster om de &quot;collision shape&quot; te tekenen. Getekende punten kunnen worden verplaatst door eerst op de blauwe knop te klikken en ze dan te verslepen en verwijderd door op de rode knop te klikken en ze dan aan te klikken.</li>
+</ul>
+<p>Voor een boom kan de &quot;collision shape&quot; bijvoorbeeld om de stronk getekend worden. Dit ziet er dan als volgt uit</p>
+<p><figure class="content-center">
+    <img src="../resources/obstacle-with-collision-shape.png" alt="Obstakel met &quot;collision shape&quot;" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Obstakel met &quot;collision shape&quot;</figcaption>
+</figure>
+</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Het kan zijn dat de speler te snel tegen obstakels aan botst. In dit geval is de makkelijkste oplossing op de &quot;collision shape&quot; van de speler kleiner te maken.</p>
+<ul>
+<li>Open de <em>Speler</em> scene vanuit het <em>FileSystem</em> gebied.</li>
+<li>Selecteer de <em>CollisionShape2D</em> node in de &quot;scene tree&quot;.</li>
+<li>Gebruik de bolletje op de &quot;shape&quot; om deze kleiner te maken. Het kan helpen om de <em>CollisionShape2D</em> node tijdelijk voor de sprite van de speler te plaatsen om de grootte van de shape beter te kunnen zien..</li>
 </ul>
         </div>
     </div>
@@ -414,20 +635,20 @@
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../activiteiten/action-adventure/voorbereiding/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../activiteiten/action-adventure/de-speler/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Vorige</span>
-                                                <span class="block mt-1">Voorbereiding</span>
+                                                <span class="block mt-1">De Speler</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../activiteiten/action-adventure/de-wereld/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../activiteiten/card-battler/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Volgende</span>
-                                                <span class="block mt-1">De Wereld</span>
+                                                <span class="block mt-1">Card Battler</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -471,6 +692,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "De Speler", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "De Wereld", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
