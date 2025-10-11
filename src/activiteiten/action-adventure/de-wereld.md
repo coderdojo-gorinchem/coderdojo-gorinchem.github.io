@@ -15,6 +15,12 @@ Nu we een speler hebben die door een grijze "void" kan bewegen is het tijd om de
 In eerste instantie zullen we ons vooral bezig houden met het tekenen van de grond "buiten" in de bovenwereld. Hiervoor gaan we de _TilesetFloor_ tileset gebruiken. Deze tileset geeft ons acht verschillende soorten "grond" waar we de wereld vorm mee kunnen geven.
 
 !!!
+Als je eerdere lessen niet gevolgd hebt, kun je hier het spel downloaden in de staat waar we beginnen met deze les.
+
+[!file Beginpunt voor deze les](/files/coderdojo-avontuur-resultaat-20250913.zip)
+!!!
+
+!!!
 Om eenvoudiger de bestanden in het asset pack te kunnen bekijken, kun je deze het beste openen in de "verkenner". Om deze te openen, klik je met de rechter muisknop in het _FileSystem_ gebied en kies je voor _Open in File Manager_.
 !!!
 
