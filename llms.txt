@@ -1,0 +1,39 @@
+﻿# CoderDojo Gorinchem
+
+> Bij CoderDojo kunnen kinderen van 7 t/m 17 jaar leren programmeren. Dit wordt helemaal gratis verzorgd door vrijwilligers!
+
+- [CoderDojo Gorinchem](https://coderdojo-gorinchem.nl/index.md): CoderDojo Gorinchem
+- [Over De Dojo](https://coderdojo-gorinchem.nl/over-de-dojo.md): CoderDojo Gorinchem wordt gerund door vrijwilligers en wordt gesponsord door Bibliotheek AanZet, Gorinchem.
+- [Activiteiten](https://coderdojo-gorinchem.nl/activiteiten/index.md): Op deze pagina vind je voorbeelden van de verschillende activiteiten die tijdens een CoderDojo worden aangeboden. Sommige activiteiten hebben een beschrijving, zodat er ook thuis aan gewerkt kan worden.
+
+## Activiteiten
+
+### 2D Top-down Avonturenspel
+
+- [2D Top-down Avonturenspel](https://coderdojo-gorinchem.nl/activiteiten/action-adventure/index.md): Tijdens deze activiteit gaan we een 2D, top-down, actie avonturen spel maken. Denk hierbij aan de originele Zelda spellen voor de (S)NES, GameBoy, etc.
+- [Voorbereiding](https://coderdojo-gorinchem.nl/activiteiten/action-adventure/voorbereiding.md): Om te beginnen gaan we een aantal benodigdheden downloaden die we nodig hebben om het spel te maken.
+- [De Speler](https://coderdojo-gorinchem.nl/activiteiten/action-adventure/de-speler.md): Misschien wel het allerbelangrijkste aan ieder spel is het karakter van de speler. Dit is dan ook het eerste aspect van het spel waar we aan gaan werken. Voordat we gaan beginnen, maken we nogmaals een kleine tussenstop voor een korte uitleg.
+- [De Wereld](https://coderdojo-gorinchem.nl/activiteiten/action-adventure/de-wereld.md): Nu we een speler hebben die door een grijze "void" kan bewegen is het tijd om de wereld wat meer kleur te geven. Hiervoor gaan we gebruik maken van "tegels" waarmee we de wereld kunnen tekenen.
+- [Kerst](https://coderdojo-gorinchem.nl/activiteiten/action-adventure/kerst.md): Een monster met een muts
+
+### Card Battler
+
+- [Card Battler](https://coderdojo-gorinchem.nl/activiteiten/card-battler/index.md): Tijdens deze activiteit gaan we een “card battler” maken. Denk bijvoorbeeld aan de Pokémon Trading Card Game, de Yu-Gi-Oh! Trading Card Game, Magic: The Gathering, etc.
+- [Steen, Papier, Schaar](https://coderdojo-gorinchem.nl/activiteiten/card-battler/steen-papier-schaar.md): Als eerste stap in het bouwen van een card battler, gaan we een versie van steen, papier, schaar maken.
+
+### Codecademy
+
+- [Codecademy](https://coderdojo-gorinchem.nl/activiteiten/codecademy/index.md): Hier in deze tutorial ga ik je leren hoe je een cursus begint bij codecademy.
+- [Stappenplan beginnen bij Codecademy](https://coderdojo-gorinchem.nl/activiteiten/codecademy/stappenplan.md): Als eerder uitgelegd in de intrductie gaan wij leren programmeren en coderen met hulp van Codecademy. Aan het einde van de les weetje wat Codecademy is en hoe je het kan gebruiken om te leren programmeren.
+- [A-Maze-ing](https://coderdojo-gorinchem.nl/activiteiten/a-maze-ing/index.md)
+- [Mijnenveger](https://coderdojo-gorinchem.nl/activiteiten/minesweeper/index.md): In deze activiteit bouwen we het klassieke spel "Mijnenveger", wat standaard is meegeleverd met Windows sinds 1989, na in HTML, CSS en JavaScript.
+- [Zombie Shooter](https://coderdojo-gorinchem.nl/activiteiten/zombie-shooter/index.md): Sprites
+
+## Handleidingen
+
+- [Visual Studio Code](https://coderdojo-gorinchem.nl/handleidingen/visual-studio-code.md): Visual Studio Code, ook wel VS Code genoemd, is een gratis beschikbare tekst editor die zeer geschikt is voor programmeren. Er zijn veel uitbreidingen voor beschikbaar die het werken met code eenvoudiger maken.
+
+## Nieuws
+
+- [Nieuws](https://coderdojo-gorinchem.nl/blog/index.md): Op deze pagina worden updates over de CoderDojo gepubliceerd. Denk aan vooraankondigingen van activiteiten en projecten en samenvattingen van vorige edities.
+- [CoderDojo 14 September 2024](https://coderdojo-gorinchem.nl/blog/202409090000-aankondiging-coderdojo.md): Welkom op de nieuwe website van de CoderDojo in Gorinchem! Ons doel is om op deze website de projecten te publiceren die we tijdens de CoderDojos behandelen.
